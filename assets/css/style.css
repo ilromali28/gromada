@@ -1,0 +1,235 @@
+:root {
+    --black-color: #040D2D;
+    --white-color: #FFF;
+    --primary-color: #53D2FA;
+    --primary2-color: #4968EB;
+    --blue-color: #5678FF;
+    --green-color: #2DF90B;
+    --yellow-color: #FBE51F;
+    --red-color: #F80E38;
+}
+
+* {
+    transition: 0.3s ease;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--black-color);
+}
+
+a {
+    color: var(--black-color);
+}
+
+.wrapper {
+    max-width: 1170px;
+    padding: 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    position: relative;
+}
+
+.headergov {
+    height: 65px;
+}
+
+.headergov__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headergov__logo {
+    width: 97px;
+    object-fit: contain;
+    margin-top: -4px;
+}
+
+.headergov__nav {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation__item {
+    margin-right: 50px;
+}
+
+.navigation__item:nth-child(1) {
+    width: 86px;
+}
+
+.navigation__item:nth-child(2) {
+    width: 88px;
+}
+
+.navigation__item:nth-child(3) {
+    width: 103.33px;
+}
+
+.navigation__item:nth-child(4) {
+    width: 92px;
+}
+
+.navigation__item:last-child {
+    margin-right: 0;
+}
+
+.navigation__item.selected {
+    font-weight: 800;
+}
+
+.navigation__item_dd {
+    position: relative;
+}
+
+.navigation__dd-title:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.navigation__item_dd::after {
+    content: "";
+    background-image: url(../../assets/img/arrow_down.svg);
+    width: 13.33px;
+    height: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 12px;
+    transition: 0.3s ease;
+}
+
+.dd_opened::after {
+    transform: rotate(180deg);
+}
+
+.dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    opacity: 0;
+    z-index: -1;
+    transform: translateY(-40px);
+    padding: 30px 30px 30px 31px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--white-color);
+    box-shadow: 2px 2px 6px rgba(86, 120, 255, 0.1);
+    border-radius: 10px 0px 10px 10px;
+}
+
+.dd_opened .dropdown {
+    opacity: 1;
+    z-index: 10;
+    transform: translateY(0);
+}
+
+.dropdown__item {
+    white-space: pre;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.dropdown__item:last-child {
+    margin-bottom: 0;
+}
+
+a.navigation__item:hover,
+.dropdown__item:hover {
+    opacity: 0.7;
+}
+
+.footer {
+    background-color: var(--blue-color);
+    padding: 50px 0 20px;
+}
+
+.footer * {
+    color: var(--white-color);
+}
+
+.footer-nav__item:hover,
+.footer-links__item:hover,
+.socials__item:hover,
+.developed-by:hover {
+    opacity: 0.5;
+}
+
+.footer-nav__item,
+.footer-links__item,
+.footer__copy-text,
+.developed-by {
+    white-space: pre;
+}
+
+.footer__support-btn {
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+    padding: 6.5px 0 5.5px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid var(--white-color);
+    width: 145px;
+    height: 30px;
+    white-space: pre;
+}
+
+.footer__support-btn:hover {
+    color: var(--blue-color);
+    background-color: var(--white-color);
+    opacity: 1;
+}
+
+.footer__copyright,
+.developed-by {
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.footer-links {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.footer-nav__item,
+.footer__links1 .footer-links__item {
+    margin-right: 30px;
+}
+
+.footer-nav__item:last-child,
+.footer__links1 .footer-links__item:last-child {
+    margin-right: 0;
+}
+
+.footer__links2 .footer-links__item {
+    margin-right: 31px;
+}
+
+.footer__links2 .footer-links__item:last-child {
+    margin-right: 0;
+}
+
+.socials__item {
+    margin-right: 20px;
+}
+
+.socials__item:last-child {
+    margin-right: 0;
+}
+
+.footer__logo {
+    margin-right: 28px;
+}
