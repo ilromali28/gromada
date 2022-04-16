@@ -171,6 +171,15 @@
         height: 60px;
         margin-right: 30px;
     }
+    .call__button_tg {
+        padding: 14px;
+    }
+    .call__button_vbr {
+        padding: 10px;
+    }
+    .call__button_msng {
+        padding: 14px;
+    }
     .hello__phone {
         height: 500px;
         width: 247.11px;
@@ -263,6 +272,15 @@
         position: absolute;
         top: -42px;
         left: -31px;
+    }
+    .call__button_tg {
+        padding: 10px 10px 8px 8px;
+    }
+    .call__button_vbr {
+        padding: 5px;
+    }
+    .call__button_msng {
+        padding: 9px;
     }
     .hello__phone {
         height: 400px;

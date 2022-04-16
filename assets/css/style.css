@@ -318,6 +318,9 @@ a.navigation__item:hover,
     margin-right: 40px;
     width: 80px;
     height: 80px;
+    background-image: url(../../assets/img/call_btn_bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat
 }
 
 .call__button img {
@@ -328,6 +331,18 @@ a.navigation__item:hover,
 
 .call__button:last-child {
     margin-right: 0;
+}
+
+.call__button_tg {
+    padding: 21px 22px 19px 18px;
+}
+
+.call__button_vbr {
+    padding: 15px;
+}
+
+.call__button_msng {
+    padding: 20px;
 }
 
 .hello__phone {
