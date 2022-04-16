@@ -15,6 +15,41 @@ textarea {
     -webkit-appearance: none;
 }
 
+h1 {
+    font-size: 50px;
+    line-height: 63px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 800;
+}
+
+.text_bold {
+    font-weight: 600;
+}
+
+.text_light {
+    color: var(--white-color);
+}
+
 * {
     transition: 0.3s ease;
 }
@@ -238,4 +273,92 @@ a.navigation__item:hover,
 
 .footer__logo {
     margin-right: 28px;
+}
+
+.hello {
+    padding: 76px 0 107px;
+}
+
+.hello__title {
+    margin-bottom: 20px;
+    max-width: 602px;
+}
+
+.hello__description {
+    max-width: 566px;
+    margin-bottom: 64px;
+}
+
+.hello__call {
+    background: linear-gradient(271.97deg, var(--primary2-color) 2.51%, var(--primary-color) 98.61%);
+    border-radius: 20px;
+    padding: 47px 145px 32px;
+    width: 100%;
+}
+
+.call__description {
+    text-align: center;
+    max-width: 476px;
+    margin-bottom: 61px;
+}
+
+.call__description2 {
+    text-align: center;
+    max-width: 332px;
+    margin-bottom: 70px;
+    display: none;
+}
+
+.call__buttons {
+    margin-left: 80px;
+    display: flex;
+}
+
+.call__button {
+    margin-right: 40px;
+    width: 80px;
+    height: 80px;
+}
+
+.call__button img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.call__button:last-child {
+    margin-right: 0;
+}
+
+.hello__phone {
+    height: 600px;
+    width: 296.53px;
+    position: absolute;
+    z-index: 2;
+    right: 66px;
+    bottom: -47px;
+}
+
+.phone__image {
+    width: auto;
+    height: 600px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.phone__content {
+    width: auto;
+    height: auto;
+    left: 12px;
+    right: 12px;
+    top: 12px;
+    bottom: 12px;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--white-color);
 }

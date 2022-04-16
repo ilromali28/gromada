@@ -41,6 +41,18 @@
 }
 
 @media (max-width: 1200px) {
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
     .wrapper {
         max-width: 770px;
     }
@@ -129,6 +141,54 @@
         margin-right: 0 !important;
         margin-bottom: 11px;
     }
+    .hello {
+        padding: 75px 0 100px;
+    }
+    .hello__title {
+        margin-bottom: 0;
+        max-width: 59%;
+    }
+    .hello__description {
+        max-width: 46%;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 60px;
+    }
+    .hello__call {
+        padding: 20px 41px;
+    }
+    .call__description {
+        display: none;
+    }
+    .call__description2 {
+        display: block;
+    }
+    .call__buttons {
+        margin-left: 45px;
+    }
+    .call__button {
+        width: 60px;
+        height: 60px;
+        margin-right: 30px;
+    }
+    .hello__phone {
+        height: 500px;
+        width: 247.11px;
+        right: 65px;
+        bottom: -40px;
+    }
+    .phone__image {
+        height: 500px;
+    }
+    .phone__content {
+        left: 8px;
+        right: 8px;
+        top: 8px;
+        bottom: 8px;
+    }
+    .phone__content img {
+        width: 91%;
+    }
 }
 
 @media (max-width: 810px) {
@@ -143,6 +203,85 @@
 
 @media (max-width: 767px) {}
 
+@media (max-width: 750px) {
+    h1 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    h2 {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .hello {
+        padding: 14px 0 85px;
+    }
+    .hello__title {
+        margin-bottom: 10px;
+        max-width: 335px;
+    }
+    .hello__description {
+        max-width: 335px;
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 50px;
+    }
+    .hello__call {
+        padding: 14px 51px 14px 0;
+        margin-right: -20px;
+        border-radius: 0;
+        margin-left: -20px;
+        width: calc(100% + 40px);
+    }
+    .call__description2 {
+        display: none;
+    }
+    .call__buttons {
+        flex-direction: column;
+        margin-left: 80px;
+    }
+    .call__button {
+        width: 50px;
+        height: 50px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .call__button:last-child {
+        margin-bottom: 0;
+    }
+    .call__button_tg {
+        position: relative;
+    }
+    .call__button_tg::before {
+        content: "@astininfobot";
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 28px;
+        position: absolute;
+        top: -42px;
+        left: -31px;
+    }
+    .hello__phone {
+        height: 400px;
+        width: 197.69px;
+        right: 20px;
+        bottom: -45px;
+        margin-right: 80px;
+    }
+    .phone__image {
+        height: 400px;
+    }
+    .phone__content {
+        left: 6px;
+        right: 9px;
+        top: 7px;
+        bottom: 7px;
+    }
+}
+
 @media (max-width: 650px) {
     .headergov {
         height: 40px;
@@ -155,6 +294,20 @@
     }
     .footer__support-btn {
         left: 33%;
+    }
+    .call__buttons {
+        margin-left: 0;
+        width: calc(100% - 156px);
+        align-items: center;
+    }
+    .hello__phone {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 570px) {
+    .hello__description {
+        margin-bottom: 161px;
     }
 }
 
