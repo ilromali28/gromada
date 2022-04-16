@@ -323,6 +323,10 @@ a.navigation__item:hover,
     background-repeat: no-repeat
 }
 
+.call__button:hover {
+    opacity: 0.8;
+}
+
 .call__button img {
     height: 100%;
     width: 100%;
