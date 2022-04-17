@@ -272,6 +272,7 @@
     .howtouse-content-wrapper {
         width: calc(100% + 40px);
         margin: 0 -20px;
+        overflow-x: scroll;
     }
     .howtouse-content__item:nth-child(1) .howtouse-content__image::after,
     .howtouse-content__item:nth-child(2) .howtouse-content__image::after {

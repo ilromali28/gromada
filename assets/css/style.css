@@ -455,10 +455,6 @@ a.navigation__item:hover,
     margin-right: 0;
 }
 
-.howtouse-content-wrapper {
-    overflow-x: scroll;
-}
-
 .howtouse-content {
     display: flex;
     justify-content: space-between;
