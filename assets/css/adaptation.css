@@ -274,11 +274,6 @@
         margin: 0 -20px;
         overflow-x: scroll;
     }
-    .howtouse-content__item:nth-child(1) .howtouse-content__image::after,
-    .howtouse-content__item:nth-child(2) .howtouse-content__image::after {
-        width: 51px;
-        right: -66px;
-    }
 }
 
 @media (max-width: 750px) {

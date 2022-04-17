@@ -528,7 +528,7 @@ a.navigation__item:hover,
 }
 
 .button:hover {
-    background-color: var(--primary2-color);
+    background-color: var(--blue-color);
     color: var(--white-color);
     font-weight: 500;
 }
