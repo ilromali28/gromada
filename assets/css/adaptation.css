@@ -54,6 +54,11 @@
         font-size: 20px;
         line-height: 30px;
     }
+    h5,
+    .tabs__item {
+        font-size: 16px;
+        line-height: 24px;
+    }
     .wrapper {
         max-width: 770px;
     }
@@ -201,6 +206,7 @@
     }
     .howtouse {
         padding-top: 20px;
+        padding-bottom: 90px;
     }
     .howtouse__title {
         margin-bottom: 50px;
@@ -243,6 +249,45 @@
         width: 45px;
         right: -64px;
     }
+    .benefits {
+        padding-bottom: 40px;
+    }
+    .benefits__title {
+        margin-bottom: 60px;
+    }
+    .benefits .switchers__item {
+        margin-right: 60px;
+    }
+    .benefits__tabs {
+        margin-top: 50px;
+    }
+    .tabs__title {
+        margin-bottom: 30px;
+    }
+    .benefits__switchers {
+        margin-bottom: 10px;
+    }
+    .tab-contents__number {
+        margin-bottom: 40px;
+        font-size: 64px;
+        line-height: 80.3px;
+    }
+    .benefits__tab-contents {
+        width: 230px;
+        margin-right: 10px;
+    }
+    .tab-contents__description {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .benefits__bg {
+        height: 350px;
+        width: calc(50% - 85px);
+        top: 90px;
+    }
+    .benefits__switcher-contents {
+        height: 310px;
+    }
 }
 
 @media (max-width: 810px) {
@@ -258,6 +303,9 @@
     }
     .howtouse-content-wrapper {
         margin: 0 -15px;
+    }
+    .benefits__tab-contents {
+        margin-right: 0;
     }
 }
 
@@ -392,6 +440,19 @@
     .howtouse__switcher-contents {
         height: 378px;
     }
+    .benefits {
+        padding-top: 60px;
+    }
+    .benefits__bg {
+        width: calc(50% - 40px);
+        top: 123px;
+    }
+    .benefits__title {
+        margin-bottom: 40px;
+    }
+    .benefits__switcher-contents {
+        height: 316px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -414,6 +475,99 @@
     }
     .hello__phone {
         margin-right: 0;
+    }
+    .benefits__tabs,
+    .tab-contents__number {
+        display: none;
+    }
+    .tab-contents__title {
+        display: block;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    .benefits {
+        padding-bottom: 80px;
+    }
+    .benefits__switchers {
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .benefits .switchers__item {
+        margin-right: 0;
+    }
+    .tab-contents__description {
+        width: 280px;
+        min-height: 87px;
+    }
+    .tab-contents__item_1 .tab-contents__description {
+        width: 230px;
+    }
+    .benefits-content {
+        height: 100%;
+        display: block;
+    }
+    .benefits__bg {
+        display: none;
+    }
+    .benefits__switcher-contents {
+        height: 200px;
+        margin: 0 -20px;
+        padding: 40px 20px 32px;
+        background-color: var(--primary-color);
+    }
+    .benefits .switcher-contents__item {
+        height: calc(100% - 40px);
+        width: calc(100% - 40px);
+    }
+    .benefits__mobile-tabs {
+        display: flex;
+        width: calc(100% + 40px);
+        position: absolute;
+        left: -20px;
+        bottom: -40px;
+    }
+    .mobile-tabs__item {
+        height: 40px;
+        width: 25%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 900;
+    }
+    .mobile-tabs__bg {
+        position: absolute;
+        z-index: -1;
+        height: 100px;
+        width: 25%;
+        left: 0;
+        top: -60px;
+        bottom: 0;
+        background-color: var(--primary-color);
+        border-radius: 0px 0px 16px 0px;
+    }
+    #tab1:checked~.block-with_tabs .mobile-tabs__bg,
+    #tab5:checked~.block-with_tabs .mobile-tabs__bg {
+        left: 0;
+    }
+    #tab2:checked~.block-with_tabs .mobile-tabs__bg,
+    #tab6:checked~.block-with_tabs .mobile-tabs__bg {
+        left: 25%;
+        border-radius: 0px 0px 16px 16px;
+    }
+    #tab3:checked~.block-with_tabs .mobile-tabs__bg,
+    #tab7:checked~.block-with_tabs .mobile-tabs__bg {
+        left: 50%;
+        border-radius: 0px 0px 16px 16px;
+    }
+    #tab4:checked~.block-with_tabs .mobile-tabs__bg,
+    #tab8:checked~.block-with_tabs .mobile-tabs__bg {
+        left: 75%;
+        border-radius: 0px 0px 0px 16px;
     }
 }
 
