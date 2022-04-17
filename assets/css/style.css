@@ -29,10 +29,11 @@ h2 {
     text-transform: uppercase;
 }
 
-h3 {
+h3,
+.switchers__item {
     font-size: 24px;
     line-height: 36px;
-    font-weight: 900;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
@@ -40,6 +41,12 @@ h4 {
     font-size: 20px;
     line-height: 25px;
     font-weight: 800;
+}
+
+h5 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
 }
 
 .text_bold {
@@ -60,6 +67,14 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: var(--black-color);
+}
+
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
 }
 
 a {
@@ -380,4 +395,159 @@ a.navigation__item:hover,
     position: absolute;
     z-index: 1;
     background-color: var(--white-color);
+}
+
+.invisible-input {
+    display: none;
+}
+
+.switcher-contents {
+    position: relative;
+}
+
+.switcher-contents__item {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+}
+
+.switchers__item:hover {
+    cursor: pointer;
+}
+
+#switcher1:checked~.block-with_switchers .switchers__item_1,
+#switcher2:checked~.block-with_switchers .switchers__item_2 {
+    font-weight: 900;
+    cursor: default;
+}
+
+#switcher1:checked~.block-with_switchers .switcher-contents__item_1,
+#switcher2:checked~.block-with_switchers .switcher-contents__item_2 {
+    opacity: 1;
+    z-index: 2;
+}
+
+.howtouse {
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.howtouse__title {
+    margin-bottom: 80px;
+}
+
+.howtouse__switcher-contents {
+    height: 528px;
+}
+
+.howtouse__switchers {
+    margin-bottom: 60px;
+    display: flex;
+}
+
+.switchers__item {
+    margin-right: 50px;
+}
+
+.switchers__item:last-child {
+    margin-right: 0;
+}
+
+.howtouse-content-wrapper {
+    overflow-x: scroll;
+}
+
+.howtouse-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.howtouse-content__item {
+    width: 370px;
+    text-align: center;
+}
+
+.howtouse-content__image {
+    background-image: url(../../assets/img/circle_bg.svg);
+    background-size: contain;
+    width: 240px;
+    height: 240px;
+    padding: 45px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.howtouse-content__item:nth-child(1) .howtouse-content__image::after,
+.howtouse-content__item:nth-child(2) .howtouse-content__image::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 125px;
+    overflow: hidden;
+    background-image: url(../../assets/img/dotted-line.svg);
+    background-size: cover;
+    right: -142px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.howtouse-content__image img {
+    width: 100%;
+}
+
+.howtouse-content__title {
+    margin-bottom: 23px;
+}
+
+.howtouse-content__description {
+    margin: 0 auto;
+}
+
+.howtouse-content__item:nth-child(1) .howtouse-content__description {
+    width: 259px;
+}
+
+.howtouse-content__item:nth-child(2) .howtouse-content__description {
+    width: 285px;
+}
+
+.howtouse-content__item:nth-child(3) .howtouse-content__description {
+    width: 257px;
+}
+
+.button {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 7px;
+    border: 1px solid var(--blue-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    display: block;
+}
+
+.button:hover {
+    background-color: var(--primary2-color);
+    color: var(--white-color);
+    font-weight: 500;
+}
+
+.howtouse__button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.howtouse__button_1 {
+    width: 200px;
+}
+
+.howtouse__button_2 {
+    width: 300px;
 }

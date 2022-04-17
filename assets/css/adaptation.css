@@ -49,7 +49,8 @@
         font-size: 24px;
         line-height: 30px;
     }
-    h3 {
+    h3,
+    .switchers__item {
         font-size: 20px;
         line-height: 30px;
     }
@@ -198,6 +199,50 @@
     .phone__content img {
         width: 91%;
     }
+    .howtouse {
+        padding-top: 20px;
+    }
+    .howtouse__title {
+        margin-bottom: 50px;
+    }
+    .switchers__item {
+        margin-right: 87px;
+    }
+    .howtouse__switchers {
+        margin-bottom: 64px;
+    }
+    .howtouse-content-wrapper {
+        margin: 0 -5px;
+    }
+    .howtouse-content__image {
+        width: 180px;
+        height: 180px;
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+    .howtouse-content__title {
+        margin-bottom: 25px;
+    }
+    .howtouse-content__item {
+        width: 260px;
+    }
+    .howtouse-content__item:nth-child(1) .howtouse-content__description {
+        width: 100%;
+    }
+    .howtouse-content__item:nth-child(2) .howtouse-content__description {
+        width: 100%;
+    }
+    .howtouse-content__item:nth-child(3) .howtouse-content__description {
+        width: 100%;
+    }
+    .howtouse__switcher-contents {
+        height: 398px;
+    }
+    .howtouse-content__item:nth-child(1) .howtouse-content__image::after,
+    .howtouse-content__item:nth-child(2) .howtouse-content__image::after {
+        width: 45px;
+        right: -64px;
+    }
 }
 
 @media (max-width: 810px) {
@@ -208,9 +253,32 @@
     .footer__wrapper {
         margin: 0 20px;
     }
+    .howtouse-content__item {
+        width: 245px;
+    }
+    .howtouse-content-wrapper {
+        margin: 0 -15px;
+    }
 }
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+    .howtouse-content__item {
+        width: 260px;
+    }
+    .howtouse-content {
+        width: max-content;
+        margin: 0 45px;
+    }
+    .howtouse-content-wrapper {
+        width: calc(100% + 40px);
+        margin: 0 -20px;
+    }
+    .howtouse-content__item:nth-child(1) .howtouse-content__image::after,
+    .howtouse-content__item:nth-child(2) .howtouse-content__image::after {
+        width: 51px;
+        right: -66px;
+    }
+}
 
 @media (max-width: 750px) {
     h1 {
@@ -221,9 +289,15 @@
         font-size: 18px;
         line-height: 23px;
     }
-    h3 {
+    h3,
+    .switchers__item {
         font-size: 16px;
         line-height: 24px;
+    }
+    h4,
+    .howtouse-content__description {
+        font-size: 14px;
+        line-height: 17px;
     }
     .hello {
         padding: 14px 0 85px;
@@ -297,6 +371,30 @@
         right: 9px;
         top: 7px;
         bottom: 7px;
+    }
+    .switchers__item {
+        margin-right: 0;
+    }
+    .howtouse {
+        padding-top: 18px;
+        padding-bottom: 0;
+    }
+    .howtouse__switchers {
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    .howtouse__title {
+        margin-bottom: 60px;
+    }
+    #switcher1:checked~.block-with_switchers .switchers__item_1,
+    #switcher2:checked~.block-with_switchers .switchers__item_2 {
+        color: var(--blue-color);
+    }
+    .howtouse-content__title {
+        margin-bottom: 32px;
+    }
+    .howtouse__switcher-contents {
+        height: 378px;
     }
 }
 
