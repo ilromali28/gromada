@@ -19,4 +19,43 @@ $(document).ready(function() {
             }
         }
     });
+
+    const swiper = new Swiper('.swiper', {
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false
+        },
+
+        direction: 'horizontal',
+        loop: true,
+        grabCursor: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        slidesPerView: 1,
+        spaceBetween: 30,
+
+        breakpoints: {
+            571: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            811: {
+                slidesPerView: 3,
+                spaceBetween: 40
+            },
+            1201: {
+                slidesPerView: 4,
+                spaceBetween: 30
+            }
+        }
+    });
 });

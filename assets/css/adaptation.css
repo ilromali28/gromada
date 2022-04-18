@@ -49,6 +49,9 @@
         font-size: 24px;
         line-height: 30px;
     }
+    .appeals__title::before {
+        top: 5px;
+    }
     h3,
     .switchers__item {
         font-size: 20px;
@@ -288,6 +291,40 @@
     .benefits__switcher-contents {
         height: 310px;
     }
+    .appeals__title {
+        margin-bottom: 50px;
+    }
+    .appeals {
+        padding: 50px 0 35px;
+    }
+    .appeal__item {
+        height: 380px;
+    }
+    .swiper {
+        height: 415px;
+    }
+    .appeal__head {
+        padding: 20px 15px 35px;
+    }
+    .appeal-date__day {
+        padding-left: 28px;
+    }
+    .appeal-date__time {
+        padding-left: 27px;
+    }
+    .appeal-date__time::before {
+        top: -1px;
+    }
+    .appeal__body {
+        padding: 12px 15px 20px;
+    }
+    .appeal__category,
+    .appeal__location {
+        margin-bottom: 12px;
+    }
+    .appeal__author {
+        margin-bottom: 35px;
+    }
 }
 
 @media (max-width: 810px) {
@@ -332,6 +369,9 @@
     h2 {
         font-size: 18px;
         line-height: 23px;
+    }
+    .appeals__title::before {
+        top: 1px;
     }
     h3,
     .switchers__item {
@@ -575,6 +615,149 @@
 @media (max-width: 570px) {
     .hello__description {
         margin-bottom: 161px;
+    }
+    .appeals {
+        padding: 34px 0 40px;
+    }
+    .appeals__title {
+        margin-bottom: 40px;
+    }
+    .appeal__head {
+        padding: 7px 20px 10.5px;
+    }
+    .appeal-status__name {
+        display: none;
+    }
+    .appeal-status__stage {
+        order: 0;
+        margin-right: 10px;
+    }
+    .appeal-status__dot {
+        order: 1;
+    }
+    .appeal__head-content {
+        display: flex;
+    }
+    .appeal__status {
+        order: 1;
+        margin-left: auto
+    }
+    .appeal__date {
+        order: 0;
+    }
+    .appeal__number {
+        margin-bottom: 10.5px;
+    }
+    .appeal__head-content,
+    .appeal__body {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .appeal-date__day {
+        margin-right: 12px;
+        padding-left: 29px;
+    }
+    .appeal__item {
+        border-radius: 20px;
+        height: 200px;
+    }
+    .swiper {
+        height: 225px;
+    }
+    .appeal__status {
+        margin-bottom: 0;
+    }
+    .appeal-date__time {
+        padding-left: 29px;
+    }
+    .appeal-date__day::before {
+        left: 0px;
+        top: -4px;
+    }
+    .appeal-date__time::before {
+        top: -2px;
+        width: 18px;
+        height: 18px;
+        background-size: contain;
+    }
+    .appeal__body {
+        padding: 12.5px 20px 20px;
+    }
+    .appeal__category,
+    .appeal__location,
+    .appeal__author {
+        padding-left: 29px;
+    }
+    .appeal__category,
+    .appeal__location {
+        margin-bottom: 6px;
+    }
+    .appeal__author {
+        margin-bottom: 16px;
+    }
+    .appeal__description {
+        -webkit-line-clamp: 2;
+    }
+    .appeal__category::before {
+        left: -1px;
+        top: -3px;
+        width: 20px;
+        height: 20px;
+    }
+    .appeal__location::before {
+        left: 3px;
+        top: -1px;
+        width: 12px;
+        height: 14px;
+        background-size: contain;
+    }
+    .appeal__author-avatar {
+        left: -1px;
+        top: -3px;
+        width: 20px;
+        height: 20px;
+    }
+    .swiper-pagination {
+        display: none;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+        top: auto;
+        bottom: 0;
+        height: 15px;
+        width: max-content;
+        font-size: 12px;
+        line-height: 15px;
+        color: var(--blue-color);
+    }
+    .swiper-button-prev {
+        left: 15px;
+    }
+    .swiper-button-next {
+        right: 15px;
+    }
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        display: none;
+    }
+    .swiper-button-prev::before,
+    .swiper-button-next::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 2px;
+    }
+    .swiper-button-prev::before {
+        background-image: url(../../assets/img/arrow_left.svg);
+        left: -15px;
+    }
+    .swiper-button-next::before {
+        background-image: url(../../assets/img/arrow_right.svg);
+        right: -15px;
     }
 }
 
