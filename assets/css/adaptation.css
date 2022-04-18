@@ -487,6 +487,7 @@
         font-weight: 900;
         text-transform: uppercase;
         margin-bottom: 20px;
+        white-space: pre;
     }
     .benefits {
         padding-bottom: 80px;
