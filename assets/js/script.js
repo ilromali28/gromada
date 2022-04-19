@@ -58,4 +58,40 @@ $(document).ready(function() {
             }
         }
     });
+
+    const sliderPartners = new Swiper('.partners-slider', {
+        direction: 'horizontal',
+        grabCursor: true,
+
+        navigation: {
+            nextEl: '.partners-slider-next',
+            prevEl: '.partners-slider-prev'
+        },
+
+        slidesPerView: 3,
+        spaceBetween: 20,
+
+        breakpoints: {
+            571: {
+                slidesPerView: 4,
+                spaceBetween: 20
+            },
+            650: {
+                slidesPerView: 5,
+                spaceBetween: 20
+            },
+            767: {
+                slidesPerView: 6,
+                spaceBetween: 22
+            },
+            811: {
+                slidesPerView: 6,
+                spaceBetween: 30
+            },
+            1201: {
+                slidesPerView: 6,
+                spaceBetween: 40
+            }
+        }
+    });
 });
