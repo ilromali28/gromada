@@ -295,7 +295,7 @@
         margin-bottom: 50px;
     }
     .appeals {
-        padding: 50px 0 35px;
+        padding: 50px 0 40px;
     }
     .appeal__item {
         height: 380px;
@@ -324,6 +324,23 @@
     }
     .appeal__author {
         margin-bottom: 35px;
+    }
+    .stat__status {
+        display: none;
+    }
+    .mapStat {
+        padding-bottom: 15px;
+    }
+    #map {
+        width: 358px;
+        margin-left: 92px;
+    }
+    .mapStat__stat {
+        width: 230px;
+        padding: 4px 20px 0px;
+    }
+    .stat__item {
+        margin-bottom: 50px;
     }
 }
 
@@ -379,9 +396,14 @@
         line-height: 24px;
     }
     h4,
-    .howtouse-content__description {
+    .howtouse-content__description,
+    .mapStat__stat {
         font-size: 14px;
         line-height: 17px;
+    }
+    .stat__count {
+        font-size: 20px;
+        line-height: 25px;
     }
     .hello {
         padding: 14px 0 85px;
@@ -492,6 +514,12 @@
     }
     .benefits__switcher-contents {
         height: 316px;
+    }
+    .mapStat__stat {
+        width: 200px;
+    }
+    #map {
+        margin-left: 40px;
     }
 }
 
@@ -609,6 +637,43 @@
     #tab8:checked~.block-with_tabs .mobile-tabs__bg {
         left: 75%;
         border-radius: 0px 0px 0px 16px;
+    }
+    .mapStat__wrapper {
+        flex-direction: column;
+    }
+    .mapStat__map {
+        width: 100%;
+        margin-right: 0;
+        padding: 0 0 0 5px;
+        margin-bottom: 30px;
+    }
+    #map {
+        width: 100%;
+        margin-left: 0;
+    }
+    .mapStat {
+        padding-bottom: 73px;
+    }
+    .mapStat__stat {
+        width: 100%;
+        padding: 0 0 0 0;
+        display: flex;
+    }
+    .stat__item {
+        margin-bottom: 0;
+    }
+    .stat__item:first-child {
+        margin-right: auto;
+    }
+    .stat__item:last-child {
+        margin-bottom: 0;
+        margin-right: 12px;
+    }
+    .stat__count {
+        margin-bottom: 11px;
+    }
+    .stat__increase {
+        margin-left: 21px;
     }
 }
 

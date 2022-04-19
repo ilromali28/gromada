@@ -358,7 +358,43 @@
                 <div class="swiper-button-prev">Попереднє</div>
                 <div class="swiper-button-next">Наступне</div>
             </div>
+        </div>
+    </section>
 
+    <section class="mapStat">
+        <div class="wrapper mapStat__wrapper">
+            <div class="mapStat__map">
+                <div id="map"></div>
+            </div>
+            <div class="mapStat__stat stat">
+                <div class="stat__item">
+                    <h4 class="stat__title">Статистика</h4>
+                    <span class="stat__date">02/2022</span>
+                    <div class="stat__status stat__status_new stat-status">
+                        <span class="stat-status__dot"></span>
+                        <span class="stat-status__name">Нові звернення</span>
+                        <span class="stat-status__count">234</span>
+                    </div>
+                    <div class="stat__status stat__status_inprogress stat-status">
+                        <span class="stat-status__dot"></span>
+                        <span class="stat-status__name">В роботі</span>
+                        <span class="stat-status__count">123</span>
+                    </div>
+                    <div class="stat__status stat__status_done stat-status">
+                        <span class="stat-status__dot"></span>
+                        <span class="stat-status__name">Виконані</span>
+                        <span class="stat-status__count">531</span>
+                    </div>
+                </div>
+                <div class="stat__item">
+                    <h4 class="stat__title">Загалом подано:</h4>
+                    <h4 class="stat__count">1 497 000 896</h4>
+                    <span class="stat__month">Лютий: 596
+                        <span class="stat__increase">(+ <span>35,01</span>%)</span>
+                    </span>
+                    <span class="stat__month">Грудень: 325</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -406,6 +442,8 @@
             <a href="https://it.astin.co/" target="_blank" class="developed-by">Створено ASTIN IT</a>
         </div>
     </footer>
+    <script src="assets/js/mapdata.js"></script>
+    <script src="assets/js/countrymap.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/touchSwipe.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
