@@ -950,6 +950,13 @@ a.navigation__item:hover,
     margin-right: auto;
 }
 
+#map_zoom,
+#map_outer,
+#map_access,
+#map_legend {
+    display: none !important;
+}
+
 #map {
     margin-top: 11px;
     width: 563px;
