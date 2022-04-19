@@ -53,7 +53,8 @@ h3,
     text-transform: uppercase;
 }
 
-h4 {
+h4,
+.stat__count {
     font-size: 20px;
     line-height: 25px;
     font-weight: 800;
@@ -1004,6 +1005,7 @@ a.navigation__item:hover,
 }
 
 .stat__count {
+    display: block;
     margin-bottom: 20px;
     color: var(--blue-color) !important;
 }
