@@ -1005,7 +1005,7 @@ a.navigation__item:hover,
 
 .stat__count {
     margin-bottom: 20px;
-    color: var(--blue-color);
+    color: var(--blue-color) !important;
 }
 
 .stat__month {
