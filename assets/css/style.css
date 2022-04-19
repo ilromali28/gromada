@@ -1005,7 +1005,6 @@ a.navigation__item:hover,
 }
 
 .stat__count {
-    display: block;
     margin-bottom: 20px;
     color: var(--blue-color) !important;
 }
