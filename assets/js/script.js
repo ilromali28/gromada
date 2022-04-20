@@ -110,13 +110,13 @@ function initMap() {
     const marker1 = new google.maps.Marker({
         position: adress1,
         map: map,
-        icon: '/assets/img/favicons/favicon-32x32.png'
+        icon: 'assets/img/favicons/favicon-32x32.png'
     });
     // The marker, positioned at Uluru
     const marker2 = new google.maps.Marker({
         position: adress2,
         map: map,
-        icon: '/assets/img/favicons/favicon-32x32.png'
+        icon: 'assets/img/favicons/favicon-32x32.png'
     });
 }
 
