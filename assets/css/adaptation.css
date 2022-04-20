@@ -406,6 +406,30 @@
     .contacts {
         padding: 36px 0 40px;
     }
+    .contactus__title {
+        font-size: 32px;
+        line-height: 40px;
+        max-width: 325px;
+    }
+    .contactus__form {
+        padding: 40px 25px;
+        width: 370px;
+    }
+    .contactus__label,
+    .contactus__input,
+    .contactus__policy {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .contactus__label {
+        margin-bottom: 15px;
+    }
+    .contactus__input {
+        padding-bottom: 13px;
+    }
+    .contactus__policy {
+        margin-bottom: 45px;
+    }
 }
 
 @media (max-width: 810px) {
@@ -789,6 +813,11 @@
     .partners {
         padding: 0 0 60px;
     }
+    .contactus__title {
+        max-width: 200px;
+        font-size: 20px;
+        line-height: 25px;
+    }
 }
 
 @media (max-width: 570px) {
@@ -1056,6 +1085,18 @@
         margin-bottom: 10px;
     }
     .follow__submit {
+        width: 100%;
+    }
+    .contactus {
+        padding-bottom: 0;
+    }
+    .contactus__wrapper {
+        flex-direction: column;
+    }
+    .contactus__form {
+        border: none;
+        background: transparent;
+        padding: 32px 0 40px;
         width: 100%;
     }
 }

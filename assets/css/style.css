@@ -1272,3 +1272,115 @@ a.contacts__value:hover {
 .gm-style-cc {
     display: none;
 }
+
+.contactus {
+    padding-bottom: 60px;
+}
+
+.contactus__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.contactus__title {
+    max-width: 474px;
+    margin-right: auto;
+}
+
+.contactus__form {
+    padding: 124px 52px 124px 48px;
+    width: 570px;
+    border-radius: 20px;
+    border: 1px solid #0000;
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, var(--primary-color), var(--primary2-color)) border-box;
+}
+
+.contactus__label,
+.contactus__input {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.contactus__label {
+    margin-bottom: 5px;
+}
+
+.contactus__input {
+    width: 100%;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #5678FF66;
+    padding-bottom: 3px;
+    color: var(--blue-color);
+}
+
+.contactus__input:hover {
+    border-bottom: 1px solid #5678ffa3;
+}
+
+.contactus__input:focus {
+    border-bottom: 1px solid var(--blue-color);
+}
+
+.contactus__input::placeholder {
+    color: #5678FF66;
+}
+
+.label {
+    position: relative;
+}
+
+.label_required::after {
+    position: absolute;
+    content: " * ";
+    color: var(--red-color);
+}
+
+.label a {
+    color: var(--red-color);
+}
+
+.label a:hover {
+    color: var(--blue-color);
+}
+
+.contactus__form>* {
+    display: block;
+}
+
+.contactus__policy {
+    display: flex;
+    margin-bottom: 52px;
+}
+
+.contactus__policy input {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+}
+
+.contactus__policy p {
+    width: calc(100% - 30px);
+    margin-left: 12px;
+}
+
+.contactus__submit {
+    background-color: transparent;
+    color: var(--black-color);
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    width: 200px;
+    padding: 7px 0;
+    text-align: center;
+    border: 1px solid var(--blue-color);
+    border-radius: 7px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactus__submit:hover {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    font-weight: 600;
+}
