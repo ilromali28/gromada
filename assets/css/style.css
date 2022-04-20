@@ -173,7 +173,7 @@ a {
 
 .navigation__dd-title:hover {
     cursor: pointer;
-    opacity: 0.7;
+    color: var(--blue-color);
 }
 
 .navigation__item_dd::after {
@@ -225,7 +225,7 @@ a {
 
 a.navigation__item:hover,
 .dropdown__item:hover {
-    opacity: 0.7;
+    color: var(--blue-color);
 }
 
 .footer {
@@ -1212,4 +1212,63 @@ a.navigation__item:hover,
 
 .follow__form {
     display: flex;
+}
+
+.contacts {
+    padding: 36px 0 60px;
+}
+
+.contacts__title {
+    margin-bottom: 69px;
+}
+
+.contacts__name {
+    font-weight: 800;
+}
+
+.contacts__value {
+    font-weight: 600;
+}
+
+a.contacts__value:hover {
+    color: var(--blue-color);
+}
+
+.contacts_contact {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contacts_contact:last-child {
+    margin-bottom: 0;
+}
+
+.contacts_contact br {
+    display: none;
+}
+
+.contacts__item {
+    margin-bottom: 40px;
+}
+
+.contacts__item:last-child {
+    margin-bottom: 0;
+}
+
+.contacts__map {
+    width: 570px;
+    height: 570px;
+    border-radius: 20px;
+}
+
+.contacts__wrapper {
+    display: flex;
+}
+
+.contacts__info {
+    margin-right: auto;
+}
+
+.gm-style-cc {
+    display: none;
 }

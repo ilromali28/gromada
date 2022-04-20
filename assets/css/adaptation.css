@@ -399,6 +399,13 @@
         font-size: 16px;
         line-height: 20px;
     }
+    .contacts__map {
+        width: 370px;
+        height: 475px;
+    }
+    .contacts {
+        padding: 36px 0 40px;
+    }
 }
 
 @media (max-width: 810px) {
@@ -591,6 +598,39 @@
     }
     .follow__submit {
         margin-right: auto;
+    }
+    .contacts__title {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .contacts__wrapper {
+        flex-direction: column;
+    }
+    .contacts__map {
+        width: 100%;
+        height: 320px;
+    }
+    .contacts {
+        padding: 31px 0 30px;
+    }
+    .contacts__title {
+        margin-bottom: 40px;
+    }
+    .contacts_contact {
+        margin-bottom: 0;
+        line-height: 30px;
+    }
+    .contacts_contact br {
+        display: block;
+    }
+    .contacts__item {
+        margin-bottom: 20px;
+    }
+    .contacts__title {
+        margin-bottom: 35px;
+    }
+    .contacts__info {
+        margin-bottom: 25px;
     }
 }
 

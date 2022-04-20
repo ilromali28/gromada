@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>ASTIN - ГРОМАДА</title>
+    <meta name="theme-color" content="#5678FF">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-switcher.svg" color="#5678ff">
+    <link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="assets/img/favicons/browserconfig.xml">
+    <link rel="stylesheet" href="assets/css/clean.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/adaptation.css">
+</head>
+
+<body>
+    <header class="headergov">
+        <div class="wrapper headergov__wrapper">
+            <a href="index.html"><img class="headergov__logo" src="assets/img/logo.svg" alt="logo"></a>
+            <nav class="headergov__nav navigation">
+                <a href="index.html" class="navigation__item">Головна</a>
+                <a href="#" class="navigation__item">Послуги</a>
+                <div class="navigation__item navigation__item_dd">
+                    <span class="navigation__dd-title">Про нас</span>
+                    <div class="navigation__dropdown dropdown">
+                        <a href="#" class="dropdown__item">Про компанію</a>
+                        <a href="#" class="dropdown__item">Команда</a>
+                        <a href="#" class="dropdown__item">Про проєкт</a>
+                        <a href="#" class="dropdown__item">ЧАПи</a>
+                    </div>
+                </div>
+                <a href="contacts.html" class="navigation__item selected">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contacts">
+        <div class="wrapper contacts__wrapper">
+            <div class="contacts__info">
+                <h4 class="contacts__title">Контакти:</h4>
+                <div class="contacts__item">
+                    <p class="contacts__name contacts_contact">Адреса:</p>
+                    <p class="contacts__value contacts_contact">Україна, м. Одеса,<br> пр. Шевченка 2, офіс 226</p>
+                    <p class="contacts__name contacts_contact">Телефон:</p>
+                    <a class="contacts__value contacts_contact" href="tel:+380487883883">+38 048 788 3883</a>
+                    <p class="contacts__name contacts_contact">Пошта:</p>
+                    <a class="contacts__value contacts_contact" href="mailto:info@astin.org">info@astin.org</a>
+                </div>
+                <div class="contacts__item">
+                    <p class="contacts__name contacts_contact">Адреса:</p>
+                    <p class="contacts__value contacts_contact">Україна, м. Одеса,<br> пр. Шевченка 33-Б</p>
+                    <p class="contacts__name contacts_contact">Телефон:</p>
+                    <a class="contacts__value contacts_contact" href="tel:+380947883883">+38 094 788 3883</a>
+                    <p class="contacts__name contacts_contact">Пошта:</p>
+                    <a class="contacts__value contacts_contact" href="mailto:hr@astin.org">hr@astin.org</a>
+                </div>
+            </div>
+            <div id="contacts__map" class="contacts__map"></div>
+            <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" defer></script>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrapper footer__wrapper">
+            <div class="footer__nav footer-nav">
+                <a class="footer-nav__item" href="index.html">Головна</a>
+                <a class="footer-nav__item" href="#">Послуги</a>
+                <a class="footer-nav__item" href="#">Про проект</a>
+                <a class="footer-nav__item" href="#">Про команду</a>
+                <a class="footer-nav__item" href="#">ЧАПи</a>
+                <a class="footer-nav__item" href="contacts.html">Контакти</a>
+            </div>
+            <a href="#" class="footer__support-btn">Підтримати проект</a>
+            <div class="footer__socials socials">
+                <a href="#" class="socials__item">
+                    <img src="assets/img/fb_icon.svg" alt="facebook icon">
+                </a>
+                <a href="#" class="socials__item">
+                    <img src="assets/img/twitter_icon.svg" alt="twitter icon">
+                </a>
+                <a href="#" class="socials__item">
+                    <img src="assets/img/inst_icon.svg" alt="instagram icon">
+                </a>
+                <a href="#" class="socials__item">
+                    <img src="assets/img/yt_icon.svg" alt=" youtube icon">
+                </a>
+            </div>
+            <div class="footer__links1 footer-links">
+                <a class="footer-links__item" href="#">Особистий кабінет</a>
+                <a class="footer-links__item" href="#">Реєстрація користувача</a>
+                <a class="footer-links__item" href="#">Адміністративна панель</a>
+                <a class="footer-links__item" href="#">Реєстрація громади</a>
+            </div>
+            <div class="footer__copyright">
+                <img class="footer__logo" src="assets/img/logo_light.svg" alt="logo">
+                <span class="footer__copy-text">2010 - 2022 ©</span>
+            </div>
+            <div class="footer__links2 footer-links">
+                <a class="footer-links__item" href="#">Політика конфіденційності</a>
+                <a class="footer-links__item" href="#">Правила користування</a>
+                <a class="footer-links__item" href="#">Ліцензія</a>
+                <a class="footer-links__item" href="#">Карта сайту</a>
+            </div>
+            <a href="https://it.astin.co/" target="_blank" class="developed-by">Створено ASTIN IT</a>
+        </div>
+    </footer>
+    <script src="assets/js/mapdata.js"></script>
+    <script src="assets/js/countrymap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/touchSwipe.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
