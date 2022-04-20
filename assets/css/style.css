@@ -1258,7 +1258,7 @@ a.contacts__value:hover {
 .contacts__map {
     width: 570px;
     height: 570px;
-    border-radius: 20px;
+    border-radius: 20px !important;
 }
 
 .contacts__wrapper {
