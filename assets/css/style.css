@@ -27,8 +27,13 @@ body {
 
 input[type=text],
 input[type=submit],
+input,
 textarea {
     -webkit-appearance: none;
+}
+
+input {
+    border-radius: 0;
 }
 
 input:-internal-autofill-selected {
