@@ -1032,7 +1032,7 @@ a.navigation__item:hover,
 }
 
 .partners {
-    padding: 20 0 100px;
+    padding: 20px 0 100px;
 }
 
 .partners__item {
@@ -1102,7 +1102,10 @@ a.navigation__item:hover,
 .swiper-button-disabled.arrow__prev::before,
 .swiper-button-disabled.arrow__next::before {
     opacity: 0.2;
-    cursor: default;
+}
+
+.swiper-button-disabled {
+    cursor: default !important;
 }
 
 .partners .partners-slider-prev {
@@ -1133,4 +1136,66 @@ a.navigation__item:hover,
 
 .partners__title {
     margin-bottom: 100px;
+}
+
+.follow {
+    height: 150px;
+    background-color: #5678FF1A;
+}
+
+.follow__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.follow__title {
+    margin-right: auto;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 45px;
+    text-transform: uppercase;
+    margin-left: -3px;
+}
+
+.follow__email {
+    margin-right: 49px;
+    width: 450px;
+}
+
+.input_bordered {
+    padding: 10px 20px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+}
+
+.input_bordered::placeholder {
+    color: #9B9EAB;
+}
+
+.input_gradient {
+    border: 1px solid #0000;
+    background: linear-gradient(var(--white-color), var(--white-color)) padding-box, linear-gradient(90deg, var(--primary-color), var(--primary2-color)) border-box;
+}
+
+.follow__submit {
+    width: 150px;
+    text-align: center;
+    padding: 12px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 10px;
+    border: 1px solid #0000;
+    background: linear-gradient(#eef1ff, #eef1ff) padding-box, linear-gradient(90deg, var(--primary-color), var(--primary2-color)) border-box;
+}
+
+.follow__submit:hover {
+    color: var(--white-color);
+    border: 1px solid var(--blue-color);
+    background: var(--blue-color);
+}
+
+.follow__form {
+    display: flex;
 }
