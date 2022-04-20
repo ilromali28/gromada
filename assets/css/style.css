@@ -1178,6 +1178,7 @@ a.navigation__item:hover,
 }
 
 .follow__submit {
+    color: var(--black-color);
     width: 150px;
     text-align: center;
     padding: 12px 0;
