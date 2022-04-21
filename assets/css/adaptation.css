@@ -466,6 +466,27 @@
     .whowe__preview {
         margin-left: -2px;
     }
+    .mission__title {
+        margin-bottom: 105px;
+    }
+    .mission__image {
+        width: 230px;
+    }
+    .mission__item_1 {
+        margin-bottom: 67px;
+    }
+    .mission__item_1 .mission__description {
+        width: 370px;
+    }
+    .mission__item_2 .mission__description {
+        width: 470px;
+    }
+    .mission__item_1 .mission__image {
+        margin-right: 17px;
+    }
+    .mission__item_2 .mission__image {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 810px) {
@@ -511,6 +532,9 @@
     }
     .whowe__content {
         margin-bottom: 0;
+    }
+    .mission__item_2 .mission__description {
+        width: 450px;
     }
 }
 
@@ -751,6 +775,35 @@
     }
     .policy__li {
         margin-left: 20px;
+    }
+    .mission__title {
+        margin-bottom: 40px;
+    }
+    .mission__image {
+        margin-bottom: 40px;
+    }
+    .mission__item_1 {
+        margin-bottom: 40px;
+    }
+    .mission__item_1 .mission__description {
+        width: 100%;
+    }
+    .mission__item_2 .mission__description {
+        width: 100%;
+    }
+    .mission__item_1 .mission__image {
+        margin-right: 0;
+        width: 270px;
+    }
+    .mission__item_2 .mission__image {
+        width: 300px
+    }
+    .mission__item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mission {
+        padding-bottom: 60px;
     }
 }
 
@@ -1114,9 +1167,16 @@
         margin-right: 1px;
         margin-top: 3.2px;
     }
-    .whowe__description {
+    .whowe__description,
+    .mission__description {
         font-size: 12px;
         line-height: 15px;
+    }
+    .mission__description p {
+        margin-bottom: 11px;
+    }
+    .mission__description b {
+        font-weight: 800;
     }
 }
 

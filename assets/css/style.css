@@ -1544,3 +1544,59 @@ a.contacts__value:hover {
     background-repeat: no-repeat;
     z-index: 0;
 }
+
+.mission {
+    padding-bottom: 80px;
+}
+
+.mission__title {
+    font-weight: 800;
+}
+
+.mission__image {
+    width: 300px;
+    object-fit: contain;
+}
+
+.mission__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mission__item_1 {
+    flex-direction: row-reverse;
+    margin-bottom: 40px;
+}
+
+.mission__item_1 .mission__description {
+    width: 500px;
+}
+
+.mission__item_2 .mission__description {
+    width: 570px;
+}
+
+.mission__description {
+    font-weight: 600;
+}
+
+.mission__description b {
+    font-weight: 900;
+}
+
+.mission__description p {
+    margin-bottom: 25px;
+}
+
+.mission__description p:last-child {
+    margin-bottom: 0;
+}
+
+.mission__item_1 .mission__image {
+    margin-right: 100px;
+}
+
+.mission__item_2 .mission__image {
+    margin-left: 75px;
+}
