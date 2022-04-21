@@ -1390,3 +1390,62 @@ a.contacts__value:hover {
     color: var(--white-color);
     font-weight: 600;
 }
+
+.policy {
+    padding: 38px 0 60px;
+}
+
+.policy__title_h2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.policy__description {
+    font-weight: 600;
+}
+
+.policy__description_light {
+    color: #7a7a7a;
+}
+
+.policy__description a {
+    color: var(--blue-color);
+}
+
+.policy__description a:hover {
+    opacity: 0.6;
+}
+
+.policy__title_h3 {
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 32px;
+}
+
+.policy__title_h4 {
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+
+.policy__description_main {
+    margin-bottom: 43px;
+}
+
+.policy__ol>.policy__li {
+    list-style: decimal;
+}
+
+.policy__ul>.policy__li {
+    list-style: disc;
+}
+
+.policy__li {
+    margin-left: 25px;
+    font-weight: 600;
+}
