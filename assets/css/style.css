@@ -17,6 +17,10 @@
     transition: 0s;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Mulish', sans-serif;
     font-weight: 500;
