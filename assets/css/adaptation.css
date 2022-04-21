@@ -430,6 +430,42 @@
     .contactus__policy {
         margin-bottom: 45px;
     }
+    .whowe {
+        padding-top: 71px;
+        padding-bottom: 188px;
+    }
+    .whowe__image_d {
+        display: none;
+    }
+    .whowe__image_t {
+        display: block;
+        width: 473px;
+        object-fit: contain;
+    }
+    .whowe__gromada span {
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 800;
+    }
+    .whowe__logoASTIN {
+        width: 124px;
+        margin-right: 20px;
+    }
+    .whowe__icon_bold {
+        margin-top: 7.62px;
+        margin-left: 2px;
+        margin-right: 1px;
+    }
+    .whowe__content {
+        width: 370px;
+        margin-bottom: 10px;
+    }
+    .whowe__logo {
+        margin-bottom: 20px;
+    }
+    .whowe__preview {
+        margin-left: -2px;
+    }
 }
 
 @media (max-width: 810px) {
@@ -449,6 +485,33 @@
     .benefits__tab-contents {
         margin-right: 0;
     }
+    .whowe {
+        padding-top: 0;
+        padding-bottom: 60px;
+    }
+    .whowe__content {
+        width: 100%;
+        text-align: center;
+    }
+    .whowe__preview {
+        margin-left: -40px;
+    }
+    .whowe__image_t {
+        display: none;
+    }
+    .whowe__preview {
+        margin-left: 7.55px;
+        margin-bottom: 20px;
+        margin-right: -20px;
+    }
+    .whowe__image_m {
+        display: block;
+        width: 100%;
+        object-fit: contain;
+    }
+    .whowe__content {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -463,6 +526,14 @@
         width: calc(100% + 40px);
         margin: 0 -20px;
         overflow-x: scroll;
+    }
+    .whowe__wrapper {
+        flex-direction: column-reverse;
+    }
+    .whowe__logo {
+        margin-left: auto;
+        margin-right: auto;
+        width: max-content;
     }
 }
 
@@ -1021,6 +1092,31 @@
     }
     .partners .partners-slider-next {
         right: 5px;
+    }
+    .whowe__logo {
+        margin-bottom: 10px;
+    }
+    .whowe__logoASTIN {
+        width: 66px;
+        margin-right: 16px;
+    }
+    .whowe__gromada span {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .whowe__icon_bold {
+        display: none;
+    }
+    .whowe__icon_light {
+        display: block;
+        height: 19.3px;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-top: 3.2px;
+    }
+    .whowe__description {
+        font-size: 12px;
+        line-height: 15px;
     }
 }
 
