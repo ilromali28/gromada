@@ -27,7 +27,8 @@ body {
 
 input[type=text],
 input[type=submit],
-input,
+input[type=email],
+input[type=tel],
 textarea {
     -webkit-appearance: none;
 }
