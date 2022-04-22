@@ -440,6 +440,12 @@ a.navigation__item:hover,
     background-color: var(--white-color);
 }
 
+.phone__content img {
+    width: 93%;
+    margin-top: 68px;
+    margin-left: 11px;
+}
+
 .invisible-input {
     display: none;
 }

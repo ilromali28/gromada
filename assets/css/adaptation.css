@@ -211,7 +211,7 @@
         bottom: 8px;
     }
     .phone__content img {
-        width: 91%;
+        width: 92%;
     }
     .howtouse {
         padding-top: 20px;
@@ -836,6 +836,11 @@
         right: 9px;
         top: 7px;
         bottom: 7px;
+    }
+    .phone__content img {
+        margin-top: 50px;
+        margin-left: 12px;
+        width: 91%;
     }
     .switchers__item {
         margin-right: 0;
