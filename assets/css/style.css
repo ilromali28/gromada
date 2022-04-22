@@ -1753,3 +1753,52 @@ a.contacts__value:hover {
     transform: translateY(-50%);
     left: -69px;
 }
+
+.donors {
+    padding-bottom: 102px;
+}
+
+.donors__title {
+    margin-bottom: 70px;
+    margin-left: 6px;
+}
+
+.donors__item {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: start;
+}
+
+.donors__item:last-child {
+    margin-bottom: 0;
+}
+
+.donors__image {
+    margin-right: auto;
+}
+
+.donors__description {
+    width: 670px;
+    font-weight: 600;
+}
+
+.donors__description p {
+    margin-bottom: 24px;
+}
+
+.donors__description p:last-child {
+    margin-bottom: 0;
+}
+
+.donors__item_1 .donors__image {
+    margin-top: 6px;
+    margin-left: 3px;
+    width: 316.92px;
+    object-fit: contain;
+}
+
+.donors__item_2 .donors__image {
+    margin-top: 10px;
+    width: 268.37px;
+    object-fit: contain;
+}
