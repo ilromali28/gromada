@@ -1874,7 +1874,7 @@ a.contacts__value:hover {
     border: 1px solid #0000;
     background: linear-gradient(var(--white-color), var(--white-color)) padding-box, linear-gradient(90deg, var(--primary-color), var(--primary2-color)) border-box;
     text-align: center;
-    padding-top: 6.5px;
+    padding-top: 6px;
     border-radius: 50%;
     font-size: 18px;
     line-height: 27px;
@@ -1888,4 +1888,51 @@ a.contacts__value:hover {
 
 .peopleappeals__button_2 {
     width: 300px;
+}
+
+.functional {
+    padding-bottom: 60px;
+}
+
+.functional__title {
+    margin-bottom: 60px;
+}
+
+.functional__switcher-contents {
+    height: 592px;
+}
+
+.functional-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.functional-content__item {
+    width: 270px;
+    height: 281px;
+    box-shadow: 2px 2px 6px rgba(86, 120, 255, 0.15);
+    border-radius: 16px;
+    border: 1px solid #0000;
+    background: linear-gradient(var(--white-color), var(--white-color)) padding-box, linear-gradient(90deg, var(--primary-color), var(--primary2-color)) border-box;
+    padding: 39px 0 0;
+    text-align: center;
+}
+
+.functional-content__image {
+    width: 120px;
+    margin-bottom: 30px;
+}
+
+.funct-img-margin-r {
+    margin-right: 20px;
+}
+
+.functional-content__description {
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -670,6 +670,15 @@
     #switcher2:checked~.peopleappeals .switchers__item_2 {
         color: var(--blue-color);
     }
+    .functional {
+        padding-bottom: 40px;
+    }
+    .functional__switcher-contents {
+        height: 1214px;
+    }
+    .functional-content__item {
+        width: calc(50% - 15px);
+    }
 }
 
 @media (max-width: 810px) {
@@ -1174,6 +1183,9 @@
         font-size: 20px;
         line-height: 25px;
     }
+    .functional__title {
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -1546,6 +1558,15 @@
     }
     .mission__description b {
         font-weight: 800;
+    }
+    .functional {
+        padding-bottom: 60px;
+    }
+    .functional__switcher-contents {
+        height: 2318px;
+    }
+    .functional-content__item {
+        width: 100%;
     }
 }
 
