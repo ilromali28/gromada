@@ -2500,6 +2500,9 @@ a.contacts__value:hover {
     display: -ms-flexbox !important;
     display: flex !important;
     margin-bottom: 30px !important;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
 }
 
 .apply-form__policy input {
@@ -2514,7 +2517,7 @@ a.contacts__value:hover {
     font-size: 12px;
     line-height: 15px;
     margin-top: 1px;
-    width: calc(100% - 26px);
+    width: calc(100% - 31px);
 }
 
 .apply-form__policy-text a {
