@@ -679,6 +679,13 @@
     .functional-content__item {
         width: calc(50% - 15px);
     }
+    .apply {
+        padding: 39px 0 92px;
+    }
+    .apply__title {
+        font-size: 40px;
+        line-height: 50px;
+    }
 }
 
 @media (max-width: 810px) {
@@ -753,6 +760,9 @@
     }
     .roadmap__item_5::before {
         right: -46px;
+    }
+    .apply__wrapper {
+        padding: 0 0;
     }
 }
 
@@ -1185,6 +1195,36 @@
     }
     .functional__title {
         margin-bottom: 40px;
+    }
+    .apply {
+        padding: 66px 0 60px;
+    }
+    .apply__title {
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 68px;
+    }
+    .apply__choose {
+        height: 24px;
+    }
+    .apply__description {
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 600;
+        margin-right: 22px;
+    }
+    .apply__login {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .add-files>span {
+        line-height: 15px;
+    }
+    .apply__wrapper {
+        padding: 0 20px;
+    }
+    .apply-form__policy input {
+        margin-left: 5px;
     }
 }
 

@@ -96,6 +96,11 @@ $(document).ready(function() {
     });
 });
 
+function countChar(val) {
+    var len = val.value.length;
+    $('#messCharCount .messCharCount__current').text(len);
+};
+
 function initMap() {
     // The location of Uluru
     const adress1 = { lat: 46.46115531671167, lng: 30.749824600000004 };
