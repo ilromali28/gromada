@@ -32,6 +32,7 @@
     -webkit-transform: translateY(70px);
     -ms-transform: translateY(70px);
     transform: translateY(70px);
+    opacity: 1;
 }
 
 .preloader__image {
@@ -87,6 +88,9 @@
 }
 
 @-webkit-keyframes disappear {
+    25% {
+        opacity: 1;
+    }
     100% {
         opacity: 0;
         visibility: hidden;
@@ -94,6 +98,9 @@
 }
 
 @keyframes disappear {
+    25% {
+        opacity: 1;
+    }
     100% {
         opacity: 0;
         visibility: hidden;
