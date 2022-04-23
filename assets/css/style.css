@@ -33,7 +33,7 @@
     -ms-transform: translateY(70px);
     transform: translateY(70px);
     opacity: 1;
-    transition: 0.5s ease-in;
+    transition: 0.7s ease-in;
 }
 
 .preloader__image {
@@ -43,6 +43,16 @@
     object-fit: contain;
     -webkit-animation: rotation 2s linear infinite;
     animation: rotation 2s linear infinite;
+}
+
+.disapper .preloader__image {
+    -webkit-animation: none;
+    animation: none;
+}
+
+.preloader.disapper {
+    opacity: 0;
+    visibility: hidden;
 }
 
 @-webkit-keyframes rotation {
@@ -81,11 +91,6 @@
         -webkit-transform: scale(1) rotate(360deg);
         transform: scale(1) rotate(360deg);
     }
-}
-
-.preloader.disapper {
-    opacity: 0;
-    visibility: hidden;
 }
 
 * {
