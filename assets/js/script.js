@@ -126,3 +126,11 @@ function initMap() {
 }
 
 window.initMap = initMap;
+
+
+var preloader = document.querySelector('.preloader');
+window.addEventListener('load', disapper);
+
+function disapper() {
+    preloader.classList.add('disapper');
+}
