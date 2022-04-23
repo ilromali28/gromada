@@ -22,11 +22,12 @@
     justify-content: center;
     position: fixed;
     left: 0;
-    height: 100vh;
+    height: calc(100vh + 140px);
     width: 100%;
     background-color: #FFF;
     z-index: 9999;
     top: -70px;
+    bottom: -70px;
     padding-top: 70px;
     padding-bottom: 70px;
     -webkit-transform: translateY(70px);
