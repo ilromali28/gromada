@@ -9,7 +9,7 @@ $(document).ready(function() {
         $('.dd_opened').removeClass('dd_opened');
     });
 
-    $(".switcher-contents__item").swipe({
+    /*$(".switcher-contents__item").swipe({
         swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
             var currentCheckbox = $(this).find('input:checked');
             if (direction == "right") {
@@ -18,7 +18,7 @@ $(document).ready(function() {
                 currentCheckbox.next().prop("checked", true);
             }
         }
-    });
+    });*/
 
     const swiper = new Swiper('.swiper', {
         autoplay: {
