@@ -2122,6 +2122,7 @@ a.contacts__value:hover {
     width: 16px;
     margin-right: 10px;
     margin-bottom: 0px !important;
+    border-radius: 0 !important;
 }
 
 .apply-form__policy-text {
