@@ -30,9 +30,6 @@
     bottom: -70px;
     padding-top: 70px;
     padding-bottom: 70px;
-    -webkit-transform: translateY(70px);
-    -ms-transform: translateY(70px);
-    transform: translateY(70px);
     opacity: 1;
     transition: 0.7s ease-in;
 }
