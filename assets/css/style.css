@@ -2587,6 +2587,7 @@ a.contacts__value:hover {
     background-color: rgba(86, 120, 255, 0.1);
     width: 60px;
     position: relative;
+    border-radius: 8px 0 0 8px;
 }
 
 .apply-form__flag:hover {
