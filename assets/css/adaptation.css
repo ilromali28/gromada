@@ -934,6 +934,7 @@
         margin: 0 45px;
     }
     .howtouse-content-wrapper {
+        width: calc(100% + 40px);
         margin: 0 -20px;
         overflow-x: scroll;
     }
@@ -1253,7 +1254,7 @@
         padding-bottom: 60px;
     }
     .roadmap {
-        padding-bottom: 41px;
+        padding-bottom: 61px;
     }
     .roadmap__title {
         margin-bottom: 40px;
@@ -1264,7 +1265,6 @@
         width: calc(100% + 40px);
         margin-left: -20px;
         margin-right: -20px;
-        padding-bottom: 20px;
     }
     .roadmap__items {
         display: -webkit-box;
@@ -1430,9 +1430,6 @@
     }
     .apply-form__policy input {
         margin-left: 5px;
-    }
-    .howtouse-content__description {
-        width: 245px;
     }
 }
 
