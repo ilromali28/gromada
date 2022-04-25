@@ -528,7 +528,7 @@ a.navigation__item:hover,
 }
 
 .benefits .switcher-contents__item {
-    background-color: var(--primary-color);
+    background-color: transparent;
 }
 
 .switchers__item:hover {
