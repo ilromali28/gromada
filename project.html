@@ -7,6 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <title>ASTIN - ГРОМАДА | ПРО ПРОЄКТ</title>
+    <style>
+        .preloader {
+            opacity: 1;
+            background-color: #FFF;
+            z-index: 9999;
+            position: fixed;
+            width: 100%;
+            height: calc(100vh + 140px);
+            top: -70px;
+            left: 0;
+            bottom: -70px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding-top: 70px;
+            padding-bottom: 70px;
+            -webkit-transition: 0.7s ease-in;
+            -o-transition: 0.7s ease-in;
+            transition: 0.7s ease-in;
+        }
+        
+        .preloader__image {
+            width: 100px;
+            height: 100px;
+            -o-object-fit: contain;
+            object-fit: contain;
+            -webkit-animation: rotation 1.5s linear infinite;
+            animation: rotation 1.5s linear infinite;
+            -webkit-transform-origin: 51px 50px;
+            -ms-transform-origin: 51px 50px;
+            transform-origin: 51px 50px;
+        }
+        
+        @-webkit-keyframes rotation {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes rotation {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
     <meta name="theme-color" content="#5678FF">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
@@ -76,7 +129,7 @@
         <div class="wrapper mission__wrapper">
             <h2 class="mission__title h2_800">місія</h2>
             <div class="mission__item mission__item_1">
-                <img class="mission__image" src="assets/img/mission1.png" alt="social care">
+                <img class="mission__image" src="assets/img/social-care.svg" alt="social care">
                 <div class="mission__description">
                     <p>Метою проєкту є стратегічний розвиток громади, спрощення процедури отримання і надання послуг у різних сферах. Спираючись на вивчення передового досвіду і сучасних технологій, ми впроваджуемо нові підходи до надання послуг там, де
                         це тільки можливо та прийнятно.</p>
@@ -84,7 +137,7 @@
                 </div>
             </div>
             <div class="mission__item mission__item_2">
-                <img class="mission__image" src="assets/img/mission2.png" alt="connection">
+                <img class="mission__image" src="assets/img/connection.svg" alt="connection">
                 <div class="mission__description">
                     <p>Проаналізувавши потребу у полегшені способу комунікації було прийнято рішення стосовно розробки пакету додатків. За результатом цього рішення розробили:</p>
                     <p><b>Адмін-панель</b> у веб-додатку для представників органів місцевого самоврядування, для зручної обробки повідомлень.</p>
@@ -204,8 +257,8 @@
                 <a class="footer-nav__item" href="index.html">Головна</a>
                 <a class="footer-nav__item" href="service.html">Послуги</a>
                 <a class="footer-nav__item" href="project.html">Про проєкт</a>
-                <a class="footer-nav__item" href="team.html">Про команду</a>
-                <a class="footer-nav__item" href="faq.html">ЧАПи</a>
+                <a class="footer-nav__item" href="team.html">Команда</a>
+                <a class="footer-nav__item" href="faq.html">Інструкція</a>
                 <a class="footer-nav__item" href="contacts.html">Контакти</a>
             </div>
             <a href="#" class="footer__support-btn">Підтримати проєкт</a>
@@ -242,8 +295,6 @@
             <a href="https://it.astin.co/" target="_blank" class="developed-by">Створено ASTIN IT</a>
         </div>
     </footer>
-    <script src="assets/js/mapdata.js"></script>
-    <script src="assets/js/countrymap.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/touchSwipe.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>

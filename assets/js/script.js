@@ -25,6 +25,7 @@ $(document).ready(function() {
             delay: 2000,
             disableOnInteraction: false
         },
+        speed: 700,
 
         direction: 'horizontal',
         loop: true,
@@ -62,6 +63,7 @@ $(document).ready(function() {
     const sliderPartners = new Swiper('.partners-slider', {
         direction: 'horizontal',
         grabCursor: true,
+        speed: 700,
 
         navigation: {
             nextEl: '.partners-slider-next',
@@ -106,18 +108,17 @@ function initMap() {
     const adress1 = { lat: 46.46115531671167, lng: 30.749824600000004 };
     const adress2 = { lat: 46.444781766723096, lng: 30.758586800000014 };
     const middleadress = { lat: 46.45393786672846, lng: 30.75337039999998 };
-    // The map, centered at Uluru
-    const map = new google.maps.Map(document.getElementById("contacts__map"), {
+    const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 14,
         center: middleadress,
+        mapTypeControl: false,
+        streetViewControl: false
     });
-    // The marker, positioned at Uluru
     const marker1 = new google.maps.Marker({
         position: adress1,
         map: map,
         icon: 'assets/img/favicons/favicon-32x32.png'
     });
-    // The marker, positioned at Uluru
     const marker2 = new google.maps.Marker({
         position: adress2,
         map: map,
