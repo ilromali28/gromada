@@ -937,6 +937,7 @@
         width: calc(100% + 40px);
         margin: 0 -20px;
         overflow-x: scroll;
+        padding-bottom: 15px;
     }
     .whowe__wrapper {
         -webkit-box-orient: vertical;

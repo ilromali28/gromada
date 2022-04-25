@@ -524,6 +524,11 @@ a.navigation__item:hover,
     -webkit-transform: translate3d(0, 0, -10px);
     -ms-transform: translate3d(0, 0, -10px);
     transform: translate3d(0, 0, -10px);
+    background-color: var(--white-color);
+}
+
+.benefits .switcher-contents__item {
+    background-color: var(--primary-color);
 }
 
 .switchers__item:hover {
