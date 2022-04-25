@@ -521,8 +521,6 @@ a.navigation__item:hover,
     width: 100%;
     z-index: -1;
     opacity: 0;
-    pointer-events: none;
-    touch-action: none;
 }
 
 .switchers__item:hover {
