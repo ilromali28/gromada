@@ -1433,6 +1433,9 @@
     .apply-form__policy input {
         margin-left: 5px;
     }
+    .howtouse-content__description {
+        width: 245px;
+    }
 }
 
 @media (max-width: 650px) {
