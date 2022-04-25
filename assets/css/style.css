@@ -519,8 +519,11 @@ a.navigation__item:hover,
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: -1;
+    z-index: -10;
     opacity: 0;
+    -webkit-transform: translate3d(0, 0, -10px);
+    -ms-transform: translate3d(0, 0, -10px);
+    transform: translate3d(0, 0, -10px);
 }
 
 .switchers__item:hover {
@@ -538,7 +541,10 @@ a.navigation__item:hover,
 #switcher1:checked~.block-with_switchers .switcher-contents__item_1,
 #switcher2:checked~.block-with_switchers .switcher-contents__item_2 {
     opacity: 1;
-    z-index: 2;
+    z-index: 10;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 .howtouse {
