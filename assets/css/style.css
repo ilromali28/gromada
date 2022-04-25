@@ -78,12 +78,38 @@ textarea:not(:focus):not(:-ms-input-placeholder):invalid {
     border: 1px solid var(--red-color) !important;
 }
 
+input:not(:focus):not(:-moz-placeholder-shown):invalid,
+textarea:not(:focus):not(:-moz-placeholder-shown):invalid {
+    background-color: var(--white-color) !important;
+    background-image: none !important;
+    color: inherit !important;
+    border: 1px solid var(--red-color) !important;
+}
+
+input:not(:focus):not(:-ms-input-placeholder):invalid,
+textarea:not(:focus):not(:-ms-input-placeholder):invalid {
+    background-color: var(--white-color) !important;
+    background-image: none !important;
+    color: inherit !important;
+    border: 1px solid var(--red-color) !important;
+}
+
 input:not(:focus):not(:placeholder-shown):invalid,
 textarea:not(:focus):not(:placeholder-shown):invalid {
     background-color: var(--white-color) !important;
     background-image: none !important;
     color: inherit !important;
     border: 1px solid var(--red-color) !important;
+}
+
+input:not(:focus):not(:-moz-placeholder-shown):valid,
+textarea:not(:focus):not(:-moz-placeholder-shown):valid {
+    border: 1px solid var(--blue-color) !important;
+}
+
+input:not(:focus):not(:-ms-input-placeholder):valid,
+textarea:not(:focus):not(:-ms-input-placeholder):valid {
+    border: 1px solid var(--blue-color) !important;
 }
 
 input:not(:focus):not(:-moz-placeholder-shown):valid,
@@ -2441,6 +2467,30 @@ a.contacts__value:hover {
     font-weight: 500;
 }
 
+.apply-form input::-webkit-input-placeholder,
+.apply-form textarea::-webkit-input-placeholder {
+    color: var(--gray-color);
+    font-weight: 500;
+}
+
+.apply-form input::-moz-placeholder,
+.apply-form textarea::-moz-placeholder {
+    color: var(--gray-color);
+    font-weight: 500;
+}
+
+.apply-form input:-ms-input-placeholder,
+.apply-form textarea:-ms-input-placeholder {
+    color: var(--gray-color);
+    font-weight: 500;
+}
+
+.apply-form input::-ms-input-placeholder,
+.apply-form textarea::-ms-input-placeholder {
+    color: var(--gray-color);
+    font-weight: 500;
+}
+
 .apply-form input::placeholder,
 .apply-form textarea::placeholder {
     color: var(--gray-color);
@@ -2630,6 +2680,8 @@ a.contacts__value:hover {
     background-image: none !important;
     border: none !important;
     border-radius: 10px !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .apply-form__phone input:not(:focus):not(:-ms-input-placeholder):invalid,
@@ -2638,6 +2690,8 @@ a.contacts__value:hover {
     background-image: none !important;
     border: none !important;
     border-radius: 10px !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .apply-form__phone input:-internal-autofill-selected,
@@ -2645,7 +2699,9 @@ a.contacts__value:hover {
 .apply-form__phone input:focus,
 .apply-form__phone input:not(:focus):not(:placeholder-shown):invalid,
 .apply-form__phone input:not(:focus):not(:placeholder-shown):valid,
-.apply-form__phone input:-webkit-autofill {
+.apply-form__phone input:-webkit-autofill,
+.apply-form__phone input:valid,
+.apply-form__phone input:invalid {
     background-color: transparent !important;
     background-image: none !important;
     border: none !important;
