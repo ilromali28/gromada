@@ -25,6 +25,7 @@ $(document).ready(function() {
             delay: 2000,
             disableOnInteraction: false
         },
+        speed: 700,
 
         direction: 'horizontal',
         loop: true,
@@ -62,6 +63,7 @@ $(document).ready(function() {
     const sliderPartners = new Swiper('.partners-slider', {
         direction: 'horizontal',
         grabCursor: true,
+        speed: 700,
 
         navigation: {
             nextEl: '.partners-slider-next',

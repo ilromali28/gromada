@@ -937,6 +937,7 @@
         width: calc(100% + 40px);
         margin: 0 -20px;
         overflow-x: scroll;
+        padding-bottom: 20px;
     }
     .whowe__wrapper {
         -webkit-box-orient: vertical;
@@ -1254,7 +1255,7 @@
         padding-bottom: 60px;
     }
     .roadmap {
-        padding-bottom: 61px;
+        padding-bottom: 41px;
     }
     .roadmap__title {
         margin-bottom: 40px;
@@ -1265,6 +1266,7 @@
         width: calc(100% + 40px);
         margin-left: -20px;
         margin-right: -20px;
+        padding-bottom: 20px;
     }
     .roadmap__items {
         display: -webkit-box;
