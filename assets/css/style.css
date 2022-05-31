@@ -2638,3 +2638,29 @@ a.contacts__value:hover {
     margin-right: auto;
     margin-left: auto;
 }
+
+.notfound {
+    margin-bottom: 135px;
+}
+
+.notfound__img_small {
+    display: none;
+}
+
+.notfound__wrapper {
+    text-align: center;
+}
+
+.notfound__img {
+    max-width: 743px;
+    object-fit: contain;
+}
+
+.notfound__title {
+    color: var(--blue-color);
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    margin-top: -70px;
+}
