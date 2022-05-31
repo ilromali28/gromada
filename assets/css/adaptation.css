@@ -842,6 +842,31 @@
         font-size: 40px;
         line-height: 50px;
     }
+    .services {
+        margin-top: 21px;
+        margin-bottom: 40px;
+    }
+    .services__title {
+        margin-bottom: 40px;
+    }
+    .services__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .services__item {
+        width: calc(50% - 15px);
+        display: flex;
+        align-items: center;
+        padding: 25px 20px 25px 30px
+    }
+    .services__img {
+        margin: 0;
+    }
+    .services__description {
+        text-align: left;
+        margin-left: 35px;
+    }
 }
 
 @media (max-width: 810px) {
@@ -921,6 +946,10 @@
     .apply__wrapper {
         padding: 0 0;
     }
+    .services__description {
+        font-size: 17px;
+        margin-left: 20px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -989,6 +1018,24 @@
     }
     .peopleappeals-content__description_3 {
         margin-bottom: 40px;
+    }
+    .services {
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+    .services__description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .services__content {
+        gap: 10px;
+    }
+    .services__item {
+        padding: 24px 20px 24px 20px;
+        width: 100%;
+    }
+    .services__item:hover {
+        transform: translateY(0) translateX(5px);
     }
 }
 
@@ -1971,6 +2018,18 @@
         background: transparent;
         padding: 32px 0 40px;
         width: 100%;
+    }
+}
+
+@media (max-width: 363px) {
+    .services__img {
+        max-width: 90px;
+    }
+    .services__item {
+        padding-right: 15px;
+    }
+    .services__description {
+        margin-left: 12px;
     }
 }
 
