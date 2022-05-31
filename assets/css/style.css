@@ -2699,3 +2699,7 @@ a.contacts__value:hover {
     margin-left: 25px;
     margin-bottom: 10px;
 }
+
+.sitemap__list a:hover {
+    color: var(--blue-color);
+}
