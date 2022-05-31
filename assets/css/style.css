@@ -2664,3 +2664,38 @@ a.contacts__value:hover {
     text-transform: uppercase;
     margin-top: -70px;
 }
+
+.sitemap {
+    margin-top: 42px;
+    margin-bottom: 280px;
+}
+
+.sitemap__title {
+    margin-bottom: 60px;
+}
+
+.sitemap__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sitemap-column__item {
+    color: #000;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.sitemap__list li {
+    list-style-type: disc;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+    padding-left: 0px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}

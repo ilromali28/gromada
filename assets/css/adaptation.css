@@ -873,6 +873,18 @@
     .notfound__img {
         margin-top: -80px;
     }
+    .sitemap {
+        margin-bottom: 110px;
+    }
+    .sitemap__content {
+        max-width: 688px;
+        row-gap: 50px;
+        column-gap: 40px;
+        justify-content: left;
+    }
+    .sitemap__column {
+        width: 200px;
+    }
 }
 
 @media (max-width: 810px) {
@@ -2041,6 +2053,19 @@
         border: none;
         background: transparent;
         padding: 32px 0 40px;
+        width: 100%;
+    }
+    .sitemap {
+        margin-top: 32px;
+        margin-bottom: 60px;
+    }
+    .sitemap__title {
+        margin-bottom: 40px;
+    }
+    .sitemap__content {
+        row-gap: 30px;
+    }
+    .sitemap__column {
         width: 100%;
     }
 }
