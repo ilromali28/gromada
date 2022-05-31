@@ -313,7 +313,7 @@ a.navigation__item:hover,
 .footer-nav__item:hover,
 .footer-links__item:hover,
 .socials__item:hover,
-.developed-by:hover {
+.developed-by a:hover {
     opacity: 0.5;
 }
 
