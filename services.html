@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <title>ASTIN - ГРОМАДА | ПОДАТИ ЗВЕРНЕННЯ</title>
+    <title>ASTIN - ГРОМАДА | ЗВЕРНЕННЯ ГРОМАДЯН</title>
     <style>
         .preloader {
             opacity: 1;
@@ -89,7 +89,7 @@
             <a href="index.html"><img class="headergov__logo" src="assets/img/logo.svg" alt="logo"></a>
             <nav class="headergov__nav navigation">
                 <a href="index.html" class="navigation__item">Головна</a>
-                <a href="services.html" class="navigation__item">Послуги</a>
+                <a href="services.html" class="navigation__item selected">Послуги</a>
                 <div class="navigation__item navigation__item_dd">
                     <span class="navigation__dd-title">Про нас</span>
                     <div class="navigation__dropdown dropdown">
@@ -103,76 +103,7 @@
         </div>
     </header>
 
-    <section class="apply">
-        <div class="wrapper apply__wrapper">
-            <h2 class="apply__title h2_800">Подати Звернення</h2>
-            <div class="apply__choose">
-                <p class="apply__description">Ви можете скористатись профілем </p>
-                <a href="#" class="apply__login">MY ASTIN</a>
-            </div>
-            <div class="apply__or apply-or">
-                <div class="apply-or__devider apply-or__devider_left"></div>
-                <span class="apply-or__text">або</span>
-                <div class="apply-or__devider apply-or__devider_right"></div>
-            </div>
-            <form action="" method="" class="apply__form apply-form">
-                <label for="surname">Прізвище</label>
-                <input type="text" id="surname" name="surname" placeholder="Прізвище" required>
-                <label for="name">Ім’я</label>
-                <input type="text" id="name" name="name" placeholder="Ім’я" required>
-                <label for="patronymic">По батькові</label>
-                <input type="text" id="patronymic" name="patronymic" placeholder="По батькові" required>
-                <label for="phone">Телефон</label>
-                <div class="apply-form__phone">
-                    <div class="apply-form__flag">
-                        <img src="assets/img/dd_icon_ua.svg" alt="UA">
-                    </div>
-                    <input type="tel" name="phone" id="phone" placeholder="00-00-00-000" required>
-                </div>
-                <label for="email">Е-пошта</label>
-                <input type="email" name="email" id="email" placeholder="Е-пошта" required>
-                <label for="government">Територіальна громада</label>
-                <select name="government" id="government" required>
-                    <option value="0">Оберіть громаду</option>
-                    <option value="1">Громада 1</option>
-                    <option value="2">Громада 2</option>
-                    <option value="3">Громада 3</option>
-                </select>
-                <label for="city">Населений пункт</label>
-                <select name="city" id="city" required>
-                    <option value="0">Оберіть населений пункт</option>
-                    <option value="1">Місто 1</option>
-                    <option value="2">Місто 2</option>
-                    <option value="3">Місто 3</option>
-                </select>
-                <label for="street">Адреса</label>
-                <input type="text" name="street" id="street" placeholder="Вулиця" required>
-                <div class="apply-form__address">
-                    <input type="text" name="building" id="building" placeholder="Будинок" required>
-                    <input type="text" name="apartment" id="apartment" placeholder="Квартира">
-                </div>
-                <label for="message">Текст звернення</label>
-                <textarea name="message" id="message" cols="30" rows="10" maxlength="1000" placeholder="Введіть текст звернення" onkeyup="countChar(this)" required></textarea>
-                <div id="messCharCount">
-                    <span class="messCharCount__current apply-form__message-counter">0</span><span>/1000</span>
-                </div>
-                <label class="apply-form__files add-files">
-                    <img src="assets/img/paperclip.svg" alt="file">
-                    <span><span class="add-files-btn">Прикріпити Файл</span> (документи або до 6 фотографій 10 мб
-                        кожна)</span>
-                    <input class="custom-file-input" placeholder="Прикріпити" type="file" id="file" name="file" multiple
-                        accept="image/*,.doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-                        size="10000000">
-                </label>
-                <label class="apply-form__policy">
-                    <input type="checkbox" name="policy" id="policy" required>
-                    <p class="apply-form__policy-text">Я погоджуюсь з <a href="policy.html" target="_blank">Умовами
-                            користування</a> та <a href="policy.html" target="_blank">Політикою Конфеденційності</a></p>
-                </label>
-                <button class="apply-form__submit" type="submit">Надіслати</button>
-            </form>
-        </div>
-    </section>
+
 
     <section class="follow">
         <div class="wrapper follow__wrapper">
