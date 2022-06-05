@@ -162,12 +162,16 @@ input:-webkit-autofill {
         font-size: clamp(50px, 14.5vw, 200px);
         line-height: 0.7;
         position: absolute;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
         transform: translateY(-50%);
     }
 }
 
 @media screen and (min-width: 650px) {
     .team-block__name {
+        -webkit-transform: translateY(-35%);
+        -ms-transform: translateY(-35%);
         transform: translateY(-35%);
     }
 }
@@ -178,10 +182,18 @@ input:-webkit-autofill {
 }
 
 .team-block__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 60px;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
     max-width: 900px;
     margin: 0 auto;
@@ -192,6 +204,9 @@ input:-webkit-autofill {
 
 @media screen and (min-width: 650px) {
     .team-block__row {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
     }
 }
@@ -205,7 +220,9 @@ input:-webkit-autofill {
 .employee__image {
     border-radius: 100px;
     display: block;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: 50% 20%;
     object-position: 50% 20%;
     height: 180px;
     margin: 0 auto;
@@ -291,6 +308,8 @@ input:-webkit-autofill {
 
 .toggle__button {
     background: #e5e5e5;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     border-radius: 20px;
     cursor: pointer;
@@ -298,6 +317,8 @@ input:-webkit-autofill {
     position: absolute;
     right: 15px;
     top: 0;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
     transform: translateY(100%);
     width: 64px;
 }
@@ -310,6 +331,8 @@ input:-webkit-autofill {
     display: block;
     height: 22px;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     position: absolute;
     width: 22px;
@@ -322,7 +345,11 @@ input:-webkit-autofill {
 
 .toggle__text {
     color: #00000012;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     font-family: 'Mulish';
     font-size: 0;
@@ -341,6 +368,8 @@ canvas {
     position: absolute;
     top: 0;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     z-index: -1;
 }
@@ -2698,6 +2727,30 @@ a.contacts__value:hover {
     font-weight: 500;
 }
 
+.apply-form input::-webkit-input-placeholder,
+.apply-form textarea::-webkit-input-placeholder {
+    color: var(--gray-color);
+    font-weight: 500;
+}
+
+.apply-form input::-moz-placeholder,
+.apply-form textarea::-moz-placeholder {
+    color: var(--gray-color);
+    font-weight: 500;
+}
+
+.apply-form input:-ms-input-placeholder,
+.apply-form textarea:-ms-input-placeholder {
+    color: var(--gray-color);
+    font-weight: 500;
+}
+
+.apply-form input::-ms-input-placeholder,
+.apply-form textarea::-ms-input-placeholder {
+    color: var(--gray-color);
+    font-weight: 500;
+}
+
 .apply-form input::placeholder,
 .apply-form textarea::placeholder {
     color: var(--gray-color);
@@ -3029,6 +3082,7 @@ a.contacts__value:hover {
     top: 251px;
     left: -32px;
     width: 270px;
+    -o-object-fit: contain;
     object-fit: contain;
 }
 
@@ -3137,7 +3191,11 @@ a.contacts__value:hover {
     padding-top: 20px;
     padding-bottom: 9px;
     margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -3148,6 +3206,8 @@ a.contacts__value:hover {
 
 .faqs__question span {
     margin-right: 11px;
+    -webkit-transition: 0ms;
+    -o-transition: 0ms;
     transition: 0ms;
 }
 
@@ -3173,6 +3233,8 @@ a.contacts__value:hover {
 
 .faqs__item.expanded .faqs__question img {
     opacity: 1;
+    -webkit-transform: rotateZ(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotateZ(180deg);
 }
 
@@ -3222,6 +3284,8 @@ a.contacts__value:hover {
     top: 0;
     height: 0;
     overflow: hidden;
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
     transition: 1s ease;
     z-index: -1;
     background-color: var(--white-color);
@@ -3237,7 +3301,11 @@ a.contacts__value:hover {
     font-weight: 800;
     font-size: 16px;
     line-height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 66px;
 }
