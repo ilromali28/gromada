@@ -1,3 +1,21 @@
+const stepHeights = {
+    tab1: 240,
+    tab2: 260,
+    tab3: 610,
+    tab4: 240,
+    tab5: 270,
+    tab6: 240,
+    tab7: 350,
+    tab8: 240
+}
+
+function getHeight(el) {
+    $(el).css('height', 'auto');
+    elHeight = $(el).height();
+    $(el).css('height', '0');
+    return elHeight;
+}
+
 $(document).ready(function() {
     $('.navigation__dd-title').click(function() {
         $(this).parent().toggleClass('dd_opened');
@@ -8,6 +26,99 @@ $(document).ready(function() {
         }
         $('.dd_opened').removeClass('dd_opened');
     });
+
+    $('.aboutWhat__name').click(function() {
+        var elParent = $(this).parent();
+        if ($(elParent).hasClass('active')) {
+            return;
+        }
+        $('.aboutWhat__item').removeClass('active');
+        $('.aboutWhat__description').css('height', '0');
+        var el = $(elParent).find('.aboutWhat__description');
+        $(elParent).addClass('active');
+        var elH = getHeight(el);
+        window.setTimeout(function() {
+            $(el).css('height', elH + 'px');
+        }, 100);
+
+    });
+
+    var stepsLabels = $('.instruction .switchers__item, .instruction .mobile-tabs__item');
+    var stepsWrapper = $('.instruction__switcher-contents');
+
+    function redrawHeight() {
+        if ($(window).width() < 650) {
+            $(stepsLabels).click(function() {
+                if ($(this).hasClass('switchers__item')) {
+                    if ($(this).hasClass('switchers__item_1')) {
+                        $('[name="firsttabs"]').each(function(index) {
+                            if ($(this).is(':checked')) {
+                                $(stepsWrapper).css('height', Object.values(stepHeights)[index] + 'px');
+                                console.log(Object.values(stepHeights)[index]);
+                            };
+                        })
+                    } else {
+                        $('[name="secondtabs"]').each(function(index) {
+                            if ($(this).is(':checked')) {
+                                $(stepsWrapper).css('height', Object.values(stepHeights)[index + 4] + 'px');
+                                console.log(Object.values(stepHeights)[index + 4]);
+                            };
+                        })
+                    }
+                } else {
+                    $('#tab1').change(function() {
+                        $(stepsWrapper).css('height', stepHeights.tab1 + 'px');
+                    });
+                    $('#tab2').change(function() {
+                        $(stepsWrapper).css('height', stepHeights.tab2 + 'px');
+                    });
+                    $('#tab3').change(function() {
+                        $(stepsWrapper).css('height', stepHeights.tab3 + 'px');
+                    });
+                    $('#tab4').change(function() {
+                        $(stepsWrapper).css('height', stepHeights.tab4 + 'px');
+                    });
+                    $('#tab5').change(function() {
+                        $(stepsWrapper).css('height', stepHeights.tab5 + 'px');
+                    });
+                    $('#tab6').change(function() {
+                        $(stepsWrapper).css('height', stepHeights.tab6 + 'px');
+                    });
+                    $('#tab7').change(function() {
+                        $(stepsWrapper).css('height', stepHeights.tab7 + 'px');
+                    });
+                    $('#tab8').change(function() {
+                        $(stepsWrapper).css('height', stepHeights.tab8 + 'px');
+                    });
+                }
+            });
+        } else {
+            $(stepsWrapper).css('height', '400px');
+        }
+    }
+    redrawHeight();
+    $(window).resize(function() {
+        redrawHeight();
+    });
+
+
+    $('.faqs__question').click(function() {
+        var elParent = $(this).parent();
+        var el = $(elParent).find('.faqs__answer');
+        if ($(elParent).hasClass('expanded')) {
+            $(elParent).removeClass('expanded');
+            $(el).css('height', '0');
+            $(el).css('margin-bottom', '0');
+        } else {
+            $(elParent).addClass('expanded');
+            var elH = getHeight(el);
+            window.setTimeout(function() {
+                $(el).css('height', elH + 'px');
+                $(el).css('margin-bottom', '30px');
+            }, 100);
+        }
+    });
+
 
     /*$(".switcher-contents__item").swipe({
         swipe: function(event, direction, distance, duration, fingerCount, fingerData) {

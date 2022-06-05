@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>ASTIN - ГРОМАДА | ІНСТРУКЦІЯ</title>
+    <style>
+        .preloader {
+            opacity: 1;
+            background-color: #FFF;
+            z-index: 9999;
+            position: fixed;
+            width: 100%;
+            height: calc(100vh + 140px);
+            top: -70px;
+            left: 0;
+            bottom: -70px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding-top: 70px;
+            padding-bottom: 70px;
+            -webkit-transition: 0.7s ease-in;
+            -o-transition: 0.7s ease-in;
+            transition: 0.7s ease-in;
+        }
+        
+        .preloader__image {
+            width: 100px;
+            height: 100px;
+            -o-object-fit: contain;
+            object-fit: contain;
+            -webkit-animation: rotation 1.5s linear infinite;
+            animation: rotation 1.5s linear infinite;
+            -webkit-transform-origin: 51px 50px;
+            -ms-transform-origin: 51px 50px;
+            transform-origin: 51px 50px;
+        }
+        
+        @-webkit-keyframes rotation {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes rotation {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <meta name="theme-color" content="#5678FF">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-switcher.svg" color="#5678ff">
+    <link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="assets/img/favicons/browserconfig.xml">
+    <link rel="stylesheet" href="assets/css/clean.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/adaptation.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <img class="preloader__image" src="assets/img/gov_icon_light.svg" alt="preloader">
+    </div>
+
+    <header class="headergov">
+        <div class="wrapper headergov__wrapper">
+            <a href="index.html"><img class="headergov__logo" src="assets/img/logo.svg" alt="logo"></a>
+            <nav class="headergov__nav navigation">
+                <a href="index.html" class="navigation__item">Головна</a>
+                <a href="services.html" class="navigation__item">Послуги</a>
+                <div class="navigation__item navigation__item_dd selected">
+                    <span class="navigation__dd-title">Про нас</span>
+                    <div class="navigation__dropdown dropdown">
+                        <a href="team.html" class="dropdown__item">Команда</a>
+                        <a href="project.html" class="dropdown__item">Про проєкт</a>
+                        <a href="faq.html" class="dropdown__item selected">Інструкція</a>
+                    </div>
+                </div>
+                <a href="contacts.html" class="navigation__item">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <input class="invisible-input" checked="checked" id="switcher1" type="radio" name="switcher" />
+    <input class="invisible-input" id="switcher2" type="radio" name="switcher" />
+
+    <section class="instruction block-with_switchers">
+        <div class="wrapper instruction__wrapper">
+            <h2 class="instruction__title h2_800">Інструкція</h2>
+            <div class="instruction__switchers switchers">
+                <label for="switcher1" class="switchers__item switchers__item_1">для населення</label>
+                <label for="switcher2" class="switchers__item switchers__item_2">для громад</label>
+            </div>
+            <img class="instruction__image" src="assets/img/guide-book.png" alt="instruction">
+            <div class="instruction__switcher-contents switcher-contents">
+                <div class="switcher-contents__item switcher-contents__item_1">
+                    <input class="invisible-input" checked="checked" id="tab1" type="radio" name="firsttabs" />
+                    <input class="invisible-input" id="tab2" type="radio" name="firsttabs" />
+                    <input class="invisible-input" id="tab3" type="radio" name="firsttabs" />
+                    <input class="invisible-input" id="tab4" type="radio" name="firsttabs" />
+                    <div class="instruction-content block-with_tabs">
+                        <div class="instruction__tabs tabs">
+                            <div class="tabs__bg"></div>
+                            <label for="tab1" class="tabs__item tabs__title tabs__item_1">Крок  1</label>
+                            <label for="tab2" class="tabs__item tabs__title tabs__item_2">Крок  2</label>
+                            <label for="tab3" class="tabs__item tabs__title tabs__item_3">Крок  3</label>
+                            <label for="tab4" class="tabs__item tabs__title tabs__item_4">Крок  4</label>
+                            <div class="tabs-divider"></div>
+                        </div>
+                        <div class="instruction__tab-contents tab-contents">
+                            <div class="tab-contents__item tab-contents__item_1">
+                                <p class="tab-contents__description">Для подачі звернення Вам потрібно натиснути кнопку “Подати звернення” або скористатись чат-ботом у зручному для Вас мессенджері (Telegram, Viber). Заповнити свої персональні данні (прізвище, ім’я, по батькові, номер телефону,
+                                    електронну пошту) у формі або скористатись персональним профілем у веб-сервісі “MY ASTIN”.
+                                </p>
+                            </div>
+                            <div class="tab-contents__item tab-contents__item_2">
+                                <p class="tab-contents__description">Обираємо громаду, населений пункт, тему звернення. Запропоновані теми звернень є узагальненими групами питань, стосовно яких можна подавати звернення. У подальшому, «тип питання» може бути змінено в процесі модерації модератором
+                                    Контактного центру, виходячи з суті порушеного питання. Звертаємо увагу, що для звернення адреса проблеми є обов’язковою.
+                                </p>
+                            </div>
+                            <div class="tab-contents__item tab-contents__item_3">
+                                <p class="tab-contents__description">Викладаємо суть звернення, детальніше опишіть проблему аби ій було присвоєно правильний приорітет. Порушити можна тільки одне питання. <br><br> За наявності фото проблеми, додаємо його (їх) до звернення. Текст звернення
+                                    не має містити більше 1000 символів. До звернення можна додати до 6 файлів. Об’єм кожного не повинен перевищувати 10 Мб. <br><br> У процесі подання звернень потрібно звертати увагу на наявність полів, які є необхідними
+                                    для заповнення. Слідуючи встановленої форми, ви маєте можливість обирати тему, яка стосується вашої проблеми. Таким чином, це дозволяє адміністратору сервісу, адресувати окреме звернення у вигляді доручення представникам
+                                    відповідальних органів громади, виходячи з теми звернень. <br><br>Також, ви маєте можливість додавати зображення, редагувати зміст, звернувшись попередньо з відповідним запитом у процесі перегляду створених вами звернень.
+                                </p>
+                            </div>
+                            <div class="tab-contents__item tab-contents__item_4">
+                                <p class="tab-contents__description">У процессі виконання Вашого звернення, маєте можливість відстежувати статус звернення, та зв’язатися з адміністрацією для вирішення питань пов’язаних зі зверненням. По виконанню звернення, Ви отримаєте можливість оцінити
+                                    якість наданих послуг.</p>
+                            </div>
+                        </div>
+                        <div class="instruction__mobile-tabs mobile-tabs">
+                            <div class="mobile-tabs__bg"></div>
+                            <label for="tab1" class="mobile-tabs__item mobile-tabs__item_1">01</label>
+                            <label for="tab2" class="mobile-tabs__item mobile-tabs__item_2">02</label>
+                            <label for="tab3" class="mobile-tabs__item mobile-tabs__item_3">03</label>
+                            <label for="tab4" class="mobile-tabs__item mobile-tabs__item_4">04</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="switcher-contents__item switcher-contents__item_2">
+                    <input class="invisible-input" checked="checked" id="tab5" type="radio" name="secondtabs" />
+                    <input class="invisible-input" id="tab6" type="radio" name="secondtabs" />
+                    <input class="invisible-input" id="tab7" type="radio" name="secondtabs" />
+                    <input class="invisible-input" id="tab8" type="radio" name="secondtabs" />
+                    <div class="instruction-content block-with_tabs">
+                        <div class="instruction__tabs tabs">
+                            <div class="tabs__bg"></div>
+                            <label for="tab5" class="tabs__item tabs__title tabs__item_5">Крок 1</label>
+                            <label for="tab6" class="tabs__item tabs__title tabs__item_6">Крок 2</label>
+                            <label for="tab7" class="tabs__item tabs__title tabs__item_7">Крок 3</label>
+                            <label for="tab8" class="tabs__item tabs__title tabs__item_8">Крок 4</label>
+                            <div class="tabs-divider"></div>
+                        </div>
+                        <div class="instruction__tab-contents tab-contents">
+                            <div class="tab-contents__item tab-contents__item_5">
+                                <p class="tab-contents__description">Для того щоб управляти акаунтом територіальної громади необхідно авторизуватись або зареєструвати персональний профіль у веб-сервісі "My ASTIN",
+                                    <br><br>Для участі у комунікації з населенням громади необхідно зареєструватись або авторизуватись у веб-сервісі “ASTIN Workspace”, в якому вказуються всі необхідні дані акаунту територіальної громади.
+                                </p>
+                            </div>
+                            <div class="tab-contents__item tab-contents__item_6">
+                                <p class="tab-contents__description">Авторизувавшись у веб-сервісі “ASTIN Workspace”, перейдіть у розділ “Налаштування” та додайте адміністраторів і виконавців до громади.
+                                </p>
+                            </div>
+                            <div class="tab-contents__item tab-contents__item_7">
+                                <p class="tab-contents__description">Перейдіть у розділ “Послуги”, налаштуйте фільтр та сортування, або скористайтесь “системою пошука” для прискорення обробки звернень.
+                                    <br><br>Оберіть потрібне звернення та відкрийте його.У налаштуваннях звернення, виконуйте редагування, призначайте виконавців та статуси звернень залежно від категорії тематики та сфери призначення звернення, слідкуйте
+                                    за коректністю надання сповіщень (Ви маєте можливість блокувати та редагувати статуси та права користувачів і виконавців).
+                                </p>
+                            </div>
+                            <div class="tab-contents__item tab-contents__item_8">
+                                <p class="tab-contents__description">Користуйтесь можливістю надання сповіщень про зміни та події, які трапляються у Вашій громаді.
+                                    <br><br>Користуйтесь усім наявним функціоналом, який передбачений сервісами проекту, а саме: телеграм-ботом, вайбер-ботом та всією екосістемою “ASTIN”.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="instruction__mobile-tabs mobile-tabs">
+                            <div class="mobile-tabs__bg"></div>
+                            <label for="tab5" class="mobile-tabs__item mobile-tabs__item_5">01</label>
+                            <label for="tab6" class="mobile-tabs__item mobile-tabs__item_6">02</label>
+                            <label for="tab7" class="mobile-tabs__item mobile-tabs__item_7">03</label>
+                            <label for="tab8" class="mobile-tabs__item mobile-tabs__item_8">04</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="wrapper faq__wrapper">
+            <h2 class="faq__title">ЧАСТІ ПИТАННЯ</h2>
+            <div class="faq__content faqs">
+                <div class="faqs__item">
+                    <h5 class="faqs__question"><span>01.</span>Що таке Gov.astin.info?<img src="assets/img/dd_arrow.svg" alt="arrow"></h5>
+                    <div class="faqs__answer">Це український проєкт спрямований на діджиталізацію державних послуг та спрощення комунікації. Основна задача якого під час децентралізації України надати громадянам зручні шляхи для покращення рівню життя. <br><br>Проєкт прямо пов’язаний
+                        зі стратегічним розвитком громади, а саме відповідає пункту 7.5 Розвитку адміністративних та соціальних послуг, орієнтованих на громадян, а саме запланованому заходу Спрощення процедури отримання і надання послуг у різних сферах.
+                        Спираючись на вивчення очікувань і потреб мешканців міста, з одного боку, та на вивчення передового досвіду і сучасних технологій, з іншого, міська влада у межах своєї компетенції має впроваджувати нові підходи до надання послуг
+                        там, де це тільки можливо та прийнятно. <br><br>Наприклад: проєкт покликаний вирішити проблеми з поданням і обробкою звернень пов’язаних з громадою, для спрощення комунікації між підрозділами та зменшенню часу на реагування.
+                    </div>
+                </div>
+                <div class="faqs__item">
+                    <h5 class="faqs__question"><span>02.</span>Які питання віришує проєкт?<img src="assets/img/dd_arrow.svg" alt="arrow"></h5>
+                    <div class="faqs__answer">
+                        За допомогою сайту або чат-боту можна подати звернення стосовно проблем пов’язаних з територіальною громадою у будь-якій з категорій визначених адміністрацією громади. <br><br> Чат-бот дозволить користувачам:<br><br>
+                        <ul>
+                            <li>позбутись необхідності стояти в черзі;</li>
+                            <li>скоротить час подання звернення;</li>
+                            <li>спростити доступ до функції подачі звернення;</li>
+                            <li>пришвидшить час реагування на звернення компетентними органами;</li>
+                            <li>дозволить користувачу надати оцінку виконаній роботі.</li>
+                        </ul>
+                        <br> Веб-додаток спрямований на те, щоб адміністрація громади:<br><br>
+                        <ul>
+                            <li>вчасно отримувала звернення;</li>
+                            <li>відстежувати статус виконання робіт;</li>
+                            <li>призначати компетентних виконавців для вирішення конкретної проблеми;</li>
+                            <li>збирати статистику стосовно поданих звернень, для розуміння напрямку подальшого розвитку;
+                            </li>
+                            <li>мала можливість аналізувати потреби мешканців;</li>
+                            <li>можливість обробляти звернення дистанційно з різних девайсів (це особливо актуально зважаючи на існуючі обставини COVID-19, та початком бойових дій);</li>
+                            <li>пришвидшить обробку звернень та зменшить кількість паперової роботи;</li>
+                            <li>дозволить отримати зворотній відгук стосовно виконаної роботи, що позитивно вплине на покращення якості надання послуг.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faqs__item">
+                    <h5 class="faqs__question"><span>03.</span>Хто реалізує данний проєкт?<img src="assets/img/dd_arrow.svg" alt="arrow"></h5>
+                    <div class="faqs__answer">
+                        Благодійна організація “АСТІН” з 2014 року веде активну діяльність спрямовану на покращення та розвиток культури, іноваційної програми навчання, активного сприяння діджиталізації у різних сферах діяльності. <br><br> Для створення
+                        проєкту, благодійною організацією надано ресурси на безоплатній основі, з залученням до співпраці групи компаній “АСТІН”, які професійно займаються різними напрямками діяльності: бізнес аналітикою, проєктуванням користувацького
+                        досвіду, створенням інтерефейсів, розробкою декстопних та веб-додатків, автоматизованим тестуванням, введеням в експлуатацією і падальшою підтримкою проєктів командою.<br><br> Для юридичного оформлення спільної роботи громада підписує
+                        меморандум про співпрацю з організацією. Проєкт створено в рамках програми ПР ООН, що реалізується у межах співпраці з Міністерством цифрової трансформації України.
+                    </div>
+                </div>
+                <div class="faqs__item">
+                    <h5 class="faqs__question"><span>04.</span>Які послуги надаються у рамках проєкту?<img src="assets/img/dd_arrow.svg" alt="arrow"></h5>
+                    <div class="faqs__answer">Громади за допомогою кабінету “Workspace ASTIN” мають можливість швидко реагувати на звернення, що спрощує комунікацію з подавачем звернення та дозволяє зрозуміти наскільки мешканці задоволенні рівнем наданих послуг.<br><br> Мешканцям
+                        громади продукт спрощує процес подачі звернення, пришвидшує вирішення питання та дозволить оцінювати роботу ОМС/ВЦА та виконавців, а за допомогою веб-сервісу “My ASTIN” можна відстежувани етапи виконання звернень. Чат боти в месенджері
+                        Telegram та Viber полегшує комунікацію між адміністрацією та мешканцями.
+                    </div>
+                </div>
+                <div class="faqs__item">
+                    <h5 class="faqs__question"><span>05.</span>Як користуватися сервісами проєкту? (населенню, громадам)<img src="assets/img/dd_arrow.svg" alt="arrow"></h5>
+                    <div class="faqs__answer">
+                        Для легкого вирішення Вашої проблеми, потрібно лише декілька кроків: <br><br>
+                        <ul>
+                            <li>Для подачі звернення Вам потрібно натиснути кнопку “Подати звернення” або скористатись чат-ботом у зручному для Вас мессенджері (Telegram, Viber).</li>
+                            <li>Після подачі звернення, очікуйте повідомлення від працівників адміністрації теріторіальної громади, відстежуйте статус обробки зверння та отримайте зворотній зв’язок.
+                            </li>
+                            <li>По виконанню звернення, Ви отримаєте можливість оцінити якість наданих послуг.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faqs__item">
+                    <h5 class="faqs__question"><span>06.</span>Як авторизуватися / зареєструватися на проєкті?<img src="assets/img/dd_arrow.svg" alt="arrow"></h5>
+                    <div class="faqs__answer">Авторизація / Реєстрація на проєкті здійснюється на сервісах:<br><br>
+                        <ul>
+                            <li>Для мешканців - my.astin.net;</li>
+                            <li>Для громад - workspace.astin.net.</li>
+                        </ul>
+                        <br> Для того щоб зареєструватись необхідно мати Е-пошту та заповнити данні у відповідній формі, після чого користувач зможе отримати доступ до всіх своїх подальших звернень поданих з профілю, а громади до функціоналу, який дозволяє
+                        ефективно їх обробляти.
+                    </div>
+                </div>
+                <div class="faqs__item">
+                    <h5 class="faqs__question"><span>07.</span>Навіщо потрібні кабінети користувачів і громад?<img src="assets/img/dd_arrow.svg" alt="arrow"></h5>
+                    <div class="faqs__answer">Кабінети мешканців і громад потрібні для спрощенної процедури подання та обробки звернень. У кабінеті можна переглядати звернення та їх статус. Для працівників громад існує можливість змінювати виконавців, статус та черговість наданих
+                        звернень.
+                    </div>
+                </div>
+                <div class="faqs__item">
+                    <h5 class="faqs__question"><span>08.</span>Якими чат-ботами є можливість користуватись у проєкті?<img src="assets/img/dd_arrow.svg" alt="arrow">
+                    </h5>
+                    <div class="faqs__answer">Впровадження Чат ботів в месенджері Telegram та Viber спрямоване на полегшення та поширення вибору комунікації мешканців та представників органів місцевого самоврядування.
+                    </div>
+                </div>
+                <div class="faqs__item">
+                    <h5 class="faqs__question"><span>09.</span>Наскільки захищенний проєкт та данні користувачів?<img src="assets/img/dd_arrow.svg" alt="arrow"></h5>
+                    <div class="faqs__answer">Наша екосистема являє собою добре захищену платформу. Вона розташована в надійному дата-центрі та відповідає світовим стандартам захисту від кіберзагроз. Крім того, “ASTIN” зберігає мінімум інформації про своїх користувачів. Цього
+                        достатньо, щоб ви могли зручно отримувати державні послуги. Усі дані ми передаємо й зберігаємо виключно у шифрованому вигляді, а для частини критичних даних використовуємо блокчейн технологію розподіленого зберігання даних. Нічого
+                        кращого у світі поки не придумали.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="aboutWhat">
+        <div class="wrapper aboutWhat__wrapper">
+            <h2 class="aboutWhat__title">про що можна повідомити</h2>
+            <div class="aboutWhat__content">
+                <div class="aboutWhat__item active">
+                    <h5 class="aboutWhat__name">ЖИТЛОВО-КОМУНАЛЬНЕ ГОСПОДАРСТВО</h5>
+                    <div class="aboutWhat__description aboutWhat-description">
+                        <p class="aboutWhat-description__item"><span>01.</span>Аварійні ситуації</p>
+                        <p class="aboutWhat-description__item"><span>02.</span>Газопостачання</p>
+                        <p class="aboutWhat-description__item"><span>03.</span>Гаряче водопостачання (ГВП)</p>
+                        <p class="aboutWhat-description__item"><span>04.</span>Електроенергія</p>
+                        <p class="aboutWhat-description__item"><span>05.</span>Енергозбереження</p>
+                        <p class="aboutWhat-description__item"><span>06.</span>ЖБК, гуртожитки, відомчі будинки</p>
+                        <p class="aboutWhat-description__item"><span>07.</span>Зовнішне освітлення</p>
+                        <p class="aboutWhat-description__item"><span>08.</span>Лічильники</p>
+                        <p class="aboutWhat-description__item"><span>09.</span>Об’єднання співвласників багатоквартирних будинків</p>
+                        <p class="aboutWhat-description__item"><span>10.</span>Перепланування житла</p>
+                        <p class="aboutWhat-description__item"><span>11.</span>Реструктуризація боргу за житлово-комунальні послуги (ЖКП)</p>
+                        <p class="aboutWhat-description__item"><span>12.</span>Розстрочка на оплату послуг з централізованого опалення (ЦО)</p>
+                        <p class="aboutWhat-description__item"><span>13.</span>Соціальні нормативи (норми) користування житлово-комунальними послугами</p>
+                        <p class="aboutWhat-description__item"><span>14.</span>Тарифи</p>
+                        <p class="aboutWhat-description__item"><span>15.</span>Утримання будинків, споруд та прибудинкових територій</p>
+                        <p class="aboutWhat-description__item"><span>16.</span>Холодне водопостачання (ХВП) та водовідведення</p>
+                        <p class="aboutWhat-description__item"><span>17.</span>Центральне опалення (ЦО)</p>
+                    </div>
+                </div>
+                <div class="aboutWhat__item">
+                    <h5 class="aboutWhat__name">ТРАНСПОРТ</h5>
+                    <div class="aboutWhat__description aboutWhat-description">
+                        <p class="aboutWhat-description__item"><span>01.</span>Автобус</p>
+                        <p class="aboutWhat-description__item"><span>02.</span>Електронний квиток (е-Квиток)</p>
+                        <p class="aboutWhat-description__item"><span>03.</span>Маршрутні таксі</p>
+                        <p class="aboutWhat-description__item"><span>04.</span>Метрополітен</p>
+                        <p class="aboutWhat-description__item"><span>05.</span>Міська електричка</p>
+                        <p class="aboutWhat-description__item"><span>06.</span>Організація руху транспорту</p>
+                        <p class="aboutWhat-description__item"><span>07.</span>Пільги на проїзд у громадському транспорті</p>
+                        <p class="aboutWhat-description__item"><span>08.</span>Трамваї</p>
+                        <p class="aboutWhat-description__item"><span>09.</span>Тролейбус</p>
+                        <p class="aboutWhat-description__item"><span>10.</span>Інспектори з паркування</p>
+                    </div>
+                </div>
+                <div class="aboutWhat__item">
+                    <h5 class="aboutWhat__name">Охорона здоров'я</h5>
+                    <div class="aboutWhat__description aboutWhat-description">
+                        <p class="aboutWhat-description__item"><span>01.</span>Лікувальні установи</p>
+                        <p class="aboutWhat-description__item"><span>02.</span>Медико-соціальна експертиза</p>
+                        <p class="aboutWhat-description__item"><span>03.</span>Мережа закладів охорони здоров'я</p>
+                        <p class="aboutWhat-description__item"><span>04.</span>Порядок дій, якщо розбився ртутний термометр</p>
+                        <p class="aboutWhat-description__item"><span>05.</span>Правила виклику бригади швидкої медичної допомоги</p>
+                        <p class="aboutWhat-description__item"><span>06.</span>Правила виклику дільничного лікаря</p>
+                        <p class="aboutWhat-description__item"><span>07.</span>Правила виклику лікаря-педіатра</p>
+                        <p class="aboutWhat-description__item"><span>08.</span>Правила виклику спеціалізованої психіатричної бригади</p>
+                        <p class="aboutWhat-description__item"><span>09.</span>Програма "Доступні ліки"</p>
+                        <p class="aboutWhat-description__item"><span>10.</span>Реєстрація смерті та поховання</p>
+                        <p class="aboutWhat-description__item"><span>11.</span>Опікові ураження у дітей</p>
+                    </div>
+                </div>
+                <div class="aboutWhat__item">
+                    <h5 class="aboutWhat__name">Реклама</h5>
+                    <div class="aboutWhat__description aboutWhat-description">
+                        <p class="aboutWhat-description__item"><span>01.</span>Розміщення зовнішньої реклами</p>
+                    </div>
+                </div>
+                <div class="aboutWhat__item">
+                    <h5 class="aboutWhat__name">Житлове забезпечення</h5>
+                    <div class="aboutWhat__description aboutWhat-description">
+                        <p class="aboutWhat-description__item"><span>01.</span>Державна програма "Доступне житло" 70 на 30</p>
+                        <p class="aboutWhat-description__item"><span>02.</span>Приватизація житла</p>
+                    </div>
+                </div>
+                <div class="aboutWhat__item">
+                    <h5 class="aboutWhat__name">Освіта</h5>
+                    <div class="aboutWhat__description aboutWhat-description">
+                        <p class="aboutWhat-description__item"><span>01.</span>Дошкільна освіта</p>
+                        <p class="aboutWhat-description__item"><span>02.</span>Загальна середня освіта</p>
+                        <p class="aboutWhat-description__item"><span>03.</span>Картка учня</p>
+                        <p class="aboutWhat-description__item"><span>04.</span>Навчальні заклади</p>
+                        <p class="aboutWhat-description__item"><span>05.</span>Навчальні заклади з можливістю інклюзивного навчання</p>
+                    </div>
+                </div>
+                <div class="aboutWhat__item">
+                    <h5 class="aboutWhat__name">Торгівля</h5>
+                    <div class="aboutWhat__description aboutWhat-description">
+                        <p class="aboutWhat-description__item"><span>01.</span>Гарантійний термін</p>
+                        <p class="aboutWhat-description__item"><span>02.</span>Порядок провадження торгівельної діяльності та правила обслуговування споживачів.</p>
+                        <p class="aboutWhat-description__item"><span>03.</span>Права споживачів</p>
+                        <p class="aboutWhat-description__item"><span>04.</span>Продаж соціальних сортів хліба ("соціальний хліб")</p>
+                        <p class="aboutWhat-description__item"><span>05.</span>Функціонування малих архітектурних форм (МАФ) та тимчасових споруд (ТС)</p>
+                    </div>
+                </div>
+                <div class="aboutWhat__item">
+                    <h5 class="aboutWhat__name">Сім'я, молодь та спорт</h5>
+                    <div class="aboutWhat__description aboutWhat-description">
+                        <p class="aboutWhat-description__item"><span>01.</span>Дитячо-юнацькі спортивні школи (ДЮСШ)</p>
+                        <p class="aboutWhat-description__item"><span>02.</span>Реєстрація місця проживання та отримання свідоцтва про народження дитини</p>
+                        <p class="aboutWhat-description__item"><span>03.</span>Спортивні об'єкти</p>
+                    </div>
+                </div>
+                <div class="aboutWhat__item">
+                    <h5 class="aboutWhat__name">Соціальне забезпечення</h5>
+                    <div class="aboutWhat__description aboutWhat-description">
+                        <p class="aboutWhat-description__item"><span>01.</span>Внутрішньо переміщені особи (ВПО)</p>
+                        <p class="aboutWhat-description__item"><span>02.</span>Державна соціальна допомога</p>
+                        <p class="aboutWhat-description__item"><span>03.</span>Муніципальна картка</p>
+                        <p class="aboutWhat-description__item"><span>04.</span>Почесне звання "Мати-героїня"</p>
+                        <p class="aboutWhat-description__item"><span>05.</span>Пільги</p>
+                        <p class="aboutWhat-description__item"><span>06.</span>Санаторно-курортне лікування</p>
+                        <p class="aboutWhat-description__item"><span>07.</span>Субсидії</p>
+                    </div>
+                </div>
+                <div class="aboutWhat__item">
+                    <h5 class="aboutWhat__name">Електронні сервіси</h5>
+                    <div class="aboutWhat__description aboutWhat-description">
+                        <p class="aboutWhat-description__item"><span>01.</span>Сервіс "Інформування"</p>
+                    </div>
+                </div>
+                <div class="aboutWhat__item">
+                    <h5 class="aboutWhat__name">Адміністративні послуги</h5>
+                    <div class="aboutWhat__description aboutWhat-description">
+                        <p class="aboutWhat-description__item"><span>01.</span>Архівні послуги</p>
+                        <p class="aboutWhat-description__item"><span>02.</span>Екологія</p>
+                        <p class="aboutWhat-description__item"><span>03.</span>Економіка. Реклама.</p>
+                        <p class="aboutWhat-description__item"><span>04.</span>Земельні питання</p>
+                        <p class="aboutWhat-description__item"><span>05.</span>Комунальне господарство</p>
+                        <p class="aboutWhat-description__item"><span>06.</span>Культурна спадщина</p>
+                        <p class="aboutWhat-description__item"><span>07.</span>Охорона праці</p>
+                        <p class="aboutWhat-description__item"><span>08.</span>Паспортні послуги</p>
+                        <p class="aboutWhat-description__item"><span>09.</span>Перелік послуг з приводу освіти</p>
+                        <p class="aboutWhat-description__item"><span>10.</span>Перелік послуг з приводу транспорту</p>
+                        <p class="aboutWhat-description__item"><span>11.</span>Підприємництво. Реєстрація бізнесу</p>
+                        <p class="aboutWhat-description__item"><span>12.</span>Реєстрація місця проживання</p>
+                        <p class="aboutWhat-description__item"><span>13.</span>Реєстрація нерухомості</p>
+                        <p class="aboutWhat-description__item"><span>14.</span>Санітарні норми, ветеринарна медицина</p>
+                        <p class="aboutWhat-description__item"><span>15.</span>Соціальна сфера. Сім'я</p>
+                    </div>
+                </div>
+                <div class="aboutWhat__item">
+                    <h5 class="aboutWhat__name">Ветеринарна медицина</h5>
+                    <div class="aboutWhat__description aboutWhat-description">
+                        <p class="aboutWhat-description__item"><span>01.</span>Утримання домашніх тварин</p>
+                    </div>
+                </div>
+                <div class="aboutWhat__item">
+                    <h5 class="aboutWhat__name">Будівництво, архітектура, землекористування</h5>
+                    <div class="aboutWhat__description aboutWhat-description">
+                        <p class="aboutWhat-description__item"><span>01.</span>Перейменування вулиць в рамках проекту про декомунізацію</p>
+                    </div>
+                </div>
+                <div class="aboutWhat__item">
+                    <h5 class="aboutWhat__name">Праця та зайнятість</h5>
+                    <div class="aboutWhat__description aboutWhat-description">
+                        <p class="aboutWhat-description__item"><span>01.</span>Військова служба за контрактом</p>
+                    </div>
+                </div>
+                <div class="aboutWhat__item">
+                    <h5 class="aboutWhat__name">Пенсійне забезпечення</h5>
+                    <div class="aboutWhat__description aboutWhat-description">
+                        <p class="aboutWhat-description__item"><span>01.</span>Електронне пенсійне посвідчення(ЕПП)</p>
+                        <p class="aboutWhat-description__item"><span>02.</span>Оформлення пенсії за віком</p>
+                        <p class="aboutWhat-description__item"><span>03.</span>Умови призначення пенсій</p>
+                    </div>
+                </div>
+                <div class="aboutWhat__item">
+                    <h5 class="aboutWhat__name">Інші</h5>
+                    <div class="aboutWhat__description aboutWhat-description">
+                        <p class="aboutWhat-description__item"><span>01.</span>Зв'язок та інформатизація</p>
+                        <p class="aboutWhat-description__item"><span>02.</span>Дотримання тиші в громадських місцях</p>
+                        <p class="aboutWhat-description__item"><span>03.</span>Електронні петиції</p>
+                        <p class="aboutWhat-description__item"><span>04.</span>Запис на прийом та звернення громадян до державної адміністрації</p>
+                        <p class="aboutWhat-description__item"><span>05.</span>Запит на публічну інформацію</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="follow">
+        <div class="wrapper follow__wrapper">
+            <p class="follow__title">Слідкуй за нами</p>
+            <form action="" method="" class="follow__form">
+                <input type="email" name="email" id="follow__email" class="follow__email input input_bordered input_gradient" placeholder="Е-пошта" required>
+                <button type="submit" class="follow__submit submit">Підписатись</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrapper footer__wrapper">
+            <div class="footer__nav footer-nav">
+                <a class="footer-nav__item" href="index.html">Головна</a>
+                <a class="footer-nav__item" href="services.html">Послуги</a>
+                <a class="footer-nav__item" href="project.html">Про проєкт</a>
+                <a class="footer-nav__item" href="team.html">Команда</a>
+                <a class="footer-nav__item" href="faq.html">Інструкція</a>
+                <a class="footer-nav__item" href="contacts.html">Контакти</a>
+            </div>
+            <a href="#" class="footer__support-btn">Підтримати проєкт</a>
+            <div class="footer__socials socials">
+                <a href="#" class="socials__item">
+                    <img src="assets/img/fb_icon.svg" alt="facebook icon">
+                </a>
+                <a href="#" class="socials__item">
+                    <img src="assets/img/twitter_icon.svg" alt="twitter icon">
+                </a>
+                <a href="#" class="socials__item">
+                    <img src="assets/img/inst_icon.svg" alt="instagram icon">
+                </a>
+                <a href="#" class="socials__item">
+                    <img src="assets/img/yt_icon.svg" alt=" youtube icon">
+                </a>
+            </div>
+            <div class="footer__links1 footer-links">
+                <a class="footer-links__item" href="#">Особистий кабінет</a>
+                <a class="footer-links__item" href="#">Реєстрація користувача</a>
+                <a class="footer-links__item" href="#">Адміністративна панель</a>
+                <a class="footer-links__item" href="#">Реєстрація громади</a>
+            </div>
+            <div class="footer__copyright">
+                <img class="footer__logo" src="assets/img/logo_light.svg" alt="logo">
+                <span class="footer__copy-text">2010 - 2022 ©</span>
+            </div>
+            <div class="footer__links2 footer-links">
+                <a class="footer-links__item" href="policy.html">Політика конфіденційності</a>
+                <a class="footer-links__item" href="policy.html">Правила користування</a>
+                <a class="footer-links__item" href="license.html">Ліцензія</a>
+                <a class="footer-links__item" href="sitemap.html">Карта сайту</a>
+            </div>
+            <a href="https://it.astin.co/" target="_blank" class="developed-by">Створено ASTIN IT</a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/touchSwipe.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
