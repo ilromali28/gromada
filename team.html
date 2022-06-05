@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>ASTIN - ГРОМАДА | КОМАНДА</title>
+    <style>
+        .preloader {
+            opacity: 1;
+            background-color: #FFF;
+            z-index: 9999;
+            position: fixed;
+            width: 100%;
+            height: calc(100vh + 140px);
+            top: -70px;
+            left: 0;
+            bottom: -70px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding-top: 70px;
+            padding-bottom: 70px;
+            -webkit-transition: 0.7s ease-in;
+            -o-transition: 0.7s ease-in;
+            transition: 0.7s ease-in;
+        }
+        
+        .preloader__image {
+            width: 100px;
+            height: 100px;
+            -o-object-fit: contain;
+            object-fit: contain;
+            -webkit-animation: rotation 1.5s linear infinite;
+            animation: rotation 1.5s linear infinite;
+            -webkit-transform-origin: 51px 50px;
+            -ms-transform-origin: 51px 50px;
+            transform-origin: 51px 50px;
+        }
+        
+        @-webkit-keyframes rotation {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes rotation {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <meta name="theme-color" content="#5678FF">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-switcher.svg" color="#5678ff">
+    <link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="assets/img/favicons/browserconfig.xml">
+    <link rel="stylesheet" href="assets/css/clean.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/adaptation.css">
+    <link rel="stylesheet" href="assets/css/team.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <img class="preloader__image" src="assets/img/gov_icon_light.svg" alt="preloader">
+    </div>
+
+    <header class="headergov">
+        <div class="wrapper headergov__wrapper">
+            <a href="index.html"><img class="headergov__logo" src="assets/img/logo.svg" alt="logo"></a>
+            <nav class="headergov__nav navigation">
+                <a href="index.html" class="navigation__item">Головна</a>
+                <a href="services.html" class="navigation__item">Послуги</a>
+                <div class="navigation__item navigation__item_dd selected">
+                    <span class="navigation__dd-title">Про нас</span>
+                    <div class="navigation__dropdown dropdown">
+                        <a href="team.html" class="dropdown__item selected">Команда</a>
+                        <a href="project.html" class="dropdown__item">Про проєкт</a>
+                        <a href="faq.html" class="dropdown__item">Інструкція</a>
+                    </div>
+                </div>
+                <a href="contacts.html" class="navigation__item">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page info block BEGIN -->
+    <div class="intro__part">
+        <div id="galleryToggle" class="toggle__button">
+            <div class="toggle__icon">
+                <svg viewBox="0 0 50 50">
+					<circle cx="25" cy="25" r="23" style="stroke-width: 4px; fill: #5678ff;"/>
+				</svg>
+            </div>
+            <div class="toggle__text">
+                <span class="three-d">3d</span>
+                <span class="two-d">2d</span>
+            </div>
+        </div>
+        <h2 class="page-title text-center">
+            Команда
+        </h2>
+        <p class="page-paragraph text-center">
+            Дякуємо усім, хто докладав зусиль у реалізації цього преоекту
+        </p>
+    </div>
+    <!-- Page info block END -->
+    <!-- Page content block BEGIN-->
+    <div class="team-container">
+        <!-- Managers BEGIN -->
+        <div class="team-block">
+            <!-- 	Block title	BEGIN -->
+            <h3 class="team-block__name text-center">
+                Менеджери
+            </h3>
+            <!-- 	Block title	ENG -->
+
+            <!-- Team row BEGIN -->
+            <div class="team-block__row">
+                <!-- Employee block BEGIN -->
+                <div class="employee">
+                    <img class="employee__image" src="https://images.unsplash.com/photo-1652447138114-f6b8a28c9ecb?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTM0ODU0NzM&ixlib=rb-1.2.1&q=80" height="270" width="270" alt="" title="" />
+                    <h4 class="employee__name text-center">
+                        Вячеслав Кудренко
+                    </h4>
+                    <p class="employee__role text-center">
+                        Директор проекту
+                    </p>
+                </div>
+                <!-- Employee block END -->
+                <!-- Employee block BEGIN -->
+                <div class="employee">
+                    <img class="employee__image" src="https://images.unsplash.com/photo-1652447138114-f6b8a28c9ecb?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTM0ODU0NzM&ixlib=rb-1.2.1&q=80" height="270" width="270" alt="" title="" />
+                    <h4 class="employee__name text-center">
+                        Костянтин Георгієв
+                    </h4>
+                    <p class="employee__role text-center">
+                        Менеджер проєкту
+                    </p>
+                </div>
+                <!-- Employee block END -->
+                <!-- Employee block BEGIN -->
+                <div class="employee">
+                    <img class="employee__image" src="https://images.unsplash.com/photo-1652447138114-f6b8a28c9ecb?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTM0ODU0NzM&ixlib=rb-1.2.1&q=80" height="270" width="270" alt="" title="" />
+                    <h4 class="employee__name text-center">
+                        Сергій Куліковський
+                    </h4>
+                    <p class="employee__role text-center">
+                        Менеджер з надання послуг
+                    </p>
+                </div>
+                <!-- Employee block END -->
+            </div>
+            <!-- Team row END -->
+        </div>
+        <!-- Managers END -->
+
+        <!-- Designers END -->
+        <div class="team-block">
+            <!-- 	Block title	BEGIN -->
+            <h3 class="team-block__name text-center">
+                Дизайнери
+            </h3>
+            <!-- 	Block title	ENG -->
+
+            <!-- Team row BEGIN -->
+            <div class="team-block__row">
+                <!-- Employee block BEGIN -->
+                <div class="employee">
+                    <img class="employee__image" src="https://images.unsplash.com/photo-1652447138114-f6b8a28c9ecb?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTM0ODU0NzM&ixlib=rb-1.2.1&q=80" height="270" width="270" alt="" title="" />
+                    <h4 class="employee__name text-center">
+                        Олег Родюк
+                    </h4>
+                    <p class="employee__role text-center">
+                        Дизайнер продукту
+                    </p>
+                </div>
+                <!-- Employee block END -->
+                <!-- Employee block BEGIN -->
+                <div class="employee">
+                    <img class="employee__image" src="https://images.unsplash.com/photo-1652447138114-f6b8a28c9ecb?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTM0ODU0NzM&ixlib=rb-1.2.1&q=80" height="270" width="270" alt="" title="" />
+                    <h4 class="employee__name text-center">
+                        Людмила Манцова
+                    </h4>
+                    <p class="employee__role text-center">
+                        Дизайнер інтерфейсу
+                    </p>
+                </div>
+                <!-- Employee block END -->
+                <!-- Employee block BEGIN -->
+                <div class="employee">
+                    <img class="employee__image" src="https://images.unsplash.com/photo-1652447138114-f6b8a28c9ecb?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTM0ODU0NzM&ixlib=rb-1.2.1&q=80" height="270" width="270" alt="" title="" />
+                    <h4 class="employee__name text-center">
+                        Анна Кашперук
+                    </h4>
+                    <p class="employee__role text-center">
+                        Дизайнер асистент
+                    </p>
+                </div>
+                <!-- Employee block END -->
+            </div>
+            <!-- Team row END -->
+        </div>
+        <!-- Designers END -->
+
+        <!-- Engineers END -->
+        <div class="team-block">
+            <!-- 	Block title	BEGIN -->
+            <h3 class="team-block__name text-center">
+                Інженери
+            </h3>
+            <!-- 	Block title	ENG -->
+
+            <!-- Team row BEGIN -->
+            <div class="team-block__row">
+                <!-- Employee block BEGIN -->
+                <div class="employee">
+                    <img class="employee__image" src="https://images.unsplash.com/photo-1652447138114-f6b8a28c9ecb?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTM0ODU0NzM&ixlib=rb-1.2.1&q=80" height="270" width="270" alt="" title="" />
+                    <h4 class="employee__name text-center">
+                        Роман Ільяшенко
+                    </h4>
+                    <p class="employee__role text-center">
+                        Lead front-end
+                    </p>
+                </div>
+                <!-- Employee block END -->
+                <!-- Employee block BEGIN -->
+                <div class="employee">
+                    <img class="employee__image" src="https://images.unsplash.com/photo-1652447138114-f6b8a28c9ecb?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTM0ODU0NzM&ixlib=rb-1.2.1&q=80" height="270" width="270" alt="" title="" />
+                    <h4 class="employee__name text-center">
+                        Евген Кашперук
+                    </h4>
+                    <p class="employee__role text-center">
+                        Lead back-end
+                    </p>
+                </div>
+                <!-- Employee block END -->
+                <!-- Employee block BEGIN -->
+                <div class="employee">
+                    <img class="employee__image" src="https://images.unsplash.com/photo-1652447138114-f6b8a28c9ecb?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTM0ODU0NzM&ixlib=rb-1.2.1&q=80" height="270" width="270" alt="" title="" />
+                    <h4 class="employee__name text-center">
+                        Ярослав Партайла
+                    </h4>
+                    <p class="employee__role text-center">
+                        Front-end
+                    </p>
+                </div>
+                <!-- Employee block END -->
+                <!-- Employee block BEGIN -->
+                <div class="employee">
+                    <img class="employee__image" src="https://images.unsplash.com/photo-1652447138114-f6b8a28c9ecb?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTM0ODU0NzM&ixlib=rb-1.2.1&q=80" height="270" width="270" alt="" title="" />
+                    <h4 class="employee__name text-center">
+                        Юрій Щербаченко
+                    </h4>
+                </div>
+                <!-- Employee block END -->
+                <!-- Employee block BEGIN -->
+                <div class="employee">
+                    <img class="employee__image" src="https://images.unsplash.com/photo-1652447138114-f6b8a28c9ecb?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTM0ODU0NzM&ixlib=rb-1.2.1&q=80" height="270" width="270" alt="" title="" />
+                    <h4 class="employee__name text-center">
+                        Денис Гервас
+                    </h4>
+                    <p class="employee__role text-center">
+                        Front-end
+                    </p>
+                </div>
+                <!-- Employee block END -->
+            </div>
+            <!-- Team row END -->
+        </div>
+        <!-- Engineers END -->
+
+        <!-- Testers BEGIN -->
+        <div class="team-block">
+            <!-- 	Block title	BEGIN -->
+            <h3 class="team-block__name team-block__name_small text-center">
+                Тестувальники
+            </h3>
+            <!-- 	Block title	ENG -->
+
+            <!-- Team row BEGIN -->
+            <div class="team-block__row">
+                <!-- Employee block BEGIN -->
+                <div class="employee">
+                    <img class="employee__image" src="https://images.unsplash.com/photo-1652447138114-f6b8a28c9ecb?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTM0ODU0NzM&ixlib=rb-1.2.1&q=80" height="270" width="270" alt="" title="" />
+                    <h4 class="employee__name text-center">
+                        Артем Ромалійський
+                    </h4>
+                </div>
+                <!-- Employee block END -->
+                <!-- Employee block BEGIN -->
+                <div class="employee">
+                    <img class="employee__image" src="https://images.unsplash.com/photo-1652447138114-f6b8a28c9ecb?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTM0ODU0NzM&ixlib=rb-1.2.1&q=80" height="270" width="270" alt="" title="" />
+                    <h4 class="employee__name text-center">
+                        Олександр Бірюков
+                    </h4>
+                </div>
+                <!-- Employee block END -->
+            </div>
+            <!-- Team row END -->
+        </div>
+        <!-- Testers END -->
+
+        <!-- Marketing BEGIN -->
+        <div class="team-block">
+            <!-- 	Block title	BEGIN -->
+            <h3 class="team-block__name team-block__name_small text-center">
+                Маркетологи
+            </h3>
+            <!-- 	Block title	ENG -->
+
+            <!-- Team row BEGIN -->
+            <div class="team-block__row">
+                <!-- Employee block BEGIN -->
+                <div class="employee">
+                    <img class="employee__image" src="https://images.unsplash.com/photo-1652447138114-f6b8a28c9ecb?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTM0ODU0NzM&ixlib=rb-1.2.1&q=80" height="270" width="270" alt="" title="" />
+                    <h4 class="employee__name text-center">
+                        Анастасія Михайлова
+                    </h4>
+                </div>
+                <!-- Employee block END -->
+            </div>
+            <!-- Team row END -->
+        </div>
+        <!-- Marketing END -->
+        <!-- partial -->
+    </div>
+    <!-- Page content block END-->
+
+    <!-- used scripts -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="assets/js/animation.js"></script>
+
+    <footer class="footer">
+        <div class="wrapper footer__wrapper">
+            <div class="footer__nav footer-nav">
+                <a class="footer-nav__item" href="index.html">Головна</a>
+                <a class="footer-nav__item" href="services.html">Послуги</a>
+                <a class="footer-nav__item" href="project.html">Про проєкт</a>
+                <a class="footer-nav__item" href="team.html">Команда</a>
+                <a class="footer-nav__item" href="faq.html">Інструкція</a>
+                <a class="footer-nav__item" href="contacts.html">Контакти</a>
+            </div>
+            <a href="#" class="footer__support-btn">Підтримати проєкт</a>
+            <div class="footer__socials socials">
+                <a href="#" class="socials__item">
+                    <img src="assets/img/fb_icon.svg" alt="facebook icon">
+                </a>
+                <a href="#" class="socials__item">
+                    <img src="assets/img/twitter_icon.svg" alt="twitter icon">
+                </a>
+                <a href="#" class="socials__item">
+                    <img src="assets/img/inst_icon.svg" alt="instagram icon">
+                </a>
+                <a href="#" class="socials__item">
+                    <img src="assets/img/yt_icon.svg" alt=" youtube icon">
+                </a>
+            </div>
+            <div class="footer__links1 footer-links">
+                <a class="footer-links__item" href="#">Особистий кабінет</a>
+                <a class="footer-links__item" href="#">Реєстрація користувача</a>
+                <a class="footer-links__item" href="#">Адміністративна панель</a>
+                <a class="footer-links__item" href="#">Реєстрація громади</a>
+            </div>
+            <div class="footer__copyright">
+                <img class="footer__logo" src="assets/img/logo_light.svg" alt="logo">
+                <span class="footer__copy-text">2010 - 2022 ©</span>
+            </div>
+            <div class="footer__links2 footer-links">
+                <a class="footer-links__item" href="privacypolicy.html">Політика конфіденційності</a>
+                <a class="footer-links__item" href="termsofuse.html">Правила користування</a>
+                <a class="footer-links__item" href="license.html">Ліцензія</a>
+                <a class="footer-links__item" href="sitemap.html">Карта сайту</a>
+            </div>
+            <a href="https://it.astin.co/" target="_blank" class="developed-by">Створено ASTIN IT</a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/touchSwipe.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>

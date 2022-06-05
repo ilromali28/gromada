@@ -940,6 +940,12 @@
     .aboutWhat__item {
         margin-bottom: 26px;
     }
+    .license__title {
+        margin-bottom: 40px;
+    }
+    .license {
+        padding-bottom: 330px;
+    }
 }
 
 @media (max-width: 810px) {
@@ -1152,6 +1158,15 @@
     }
     .aboutWhat-description__item:last-child {
         margin-bottom: 0;
+    }
+    .license__title {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .license {
+        padding-top: 30px;
+        padding-bottom: 54px;
     }
 }
 
