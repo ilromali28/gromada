@@ -16,7 +16,67 @@ function getHeight(el) {
     return elHeight;
 }
 
+const header = document.querySelector('.headergov');
+let lastScrollTop = 0;
+const scrollThreshold = 0.3;
+
+// Находим элементы
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const mobileMenu = document.querySelector('.headergov__nav');
+
+function hideHeader() {
+    const windowHeight = window.innerHeight;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollDistance = scrollTop - lastScrollTop;
+    if (scrollDistance > 0 && scrollTop > windowHeight * scrollThreshold) {
+        header.classList.add('hidden');
+    } else {
+        header.classList.remove('hidden');
+    }
+    lastScrollTop = scrollTop;
+}
+
+function toggleMobileMenu() {
+    mobileMenu.classList.toggle('open');
+}
+
+function closeMobileMenu() {
+    mobileMenu.classList.remove('open');
+}
+
+window.addEventListener('scroll', hideHeader);
+
+
+// Добавляем обработчик клика на ссылки в адаптированном меню (закрывает меню)
+mobileMenu.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+        closeMobileMenu();
+    }
+});
+
+// Закрываем адаптированное меню при клике вне меню
+/*document.addEventListener('click', function (e) {
+    if (!mobileMenu.contains(e.target) && e.target !== mobileMenuBtn) {
+        closeMobileMenu();
+    }
+});*/
+
+// При изменении размера экрана больше 650px закрываем адаптированное меню
+window.addEventListener('resize', function () {
+    if (window.innerWidth > 650) {
+        closeMobileMenu();
+    }
+});
+
+// Дополнительный обработчик для закрытия меню при скролле на мобильных устройствах
+window.addEventListener('scroll', function () {
+    if (window.innerWidth <= 650) {
+        closeMobileMenu();
+    }
+});
+
 $(document).ready(function() {
+    hideHeader();
     $('.navigation__dd-title').click(function() {
         $(this).parent().toggleClass('dd_opened');
     });
@@ -25,6 +85,19 @@ $(document).ready(function() {
             return;
         }
         $('.dd_opened').removeClass('dd_opened');
+    });
+    // Добавляем обработчик клика на кнопку бургера
+    mobileMenuBtn.addEventListener('click', function () {
+        toggleMobileMenu();
+        // Анимируем трансформацию бургера в крестик и обратно
+        this.classList.toggle('cross');
+    });
+
+    mobileMenu.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A') {
+            closeMobileMenu();
+            mobileMenuBtn.classList.remove('cross');
+        }
     });
 
     $('.aboutWhat__name').click(function() {
