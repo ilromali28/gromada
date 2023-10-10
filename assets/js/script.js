@@ -51,6 +51,7 @@ window.addEventListener('scroll', hideHeader);
 mobileMenu.addEventListener('click', function (e) {
     if (e.target.tagName === 'A') {
         closeMobileMenu();
+        mobileMenuBtn.classList.remove('cross');
     }
 });
 
@@ -58,6 +59,7 @@ mobileMenu.addEventListener('click', function (e) {
 /*document.addEventListener('click', function (e) {
     if (!mobileMenu.contains(e.target) && e.target !== mobileMenuBtn) {
         closeMobileMenu();
+        mobileMenuBtn.classList.remove('cross');
     }
 });*/
 
@@ -65,6 +67,7 @@ mobileMenu.addEventListener('click', function (e) {
 window.addEventListener('resize', function () {
     if (window.innerWidth > 650) {
         closeMobileMenu();
+        mobileMenuBtn.classList.remove('cross');
     }
 });
 
@@ -72,6 +75,7 @@ window.addEventListener('resize', function () {
 window.addEventListener('scroll', function () {
     if (window.innerWidth <= 650) {
         closeMobileMenu();
+        mobileMenuBtn.classList.remove('cross');
     }
 });
 
